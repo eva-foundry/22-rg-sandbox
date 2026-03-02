@@ -1,0 +1,13 @@
+[2026-02-04 16:30:38] [INFO] ========================================
+[2026-02-04 16:30:38] [INFO] Storage Assessment Script v2.0
+[2026-02-04 16:30:38] [INFO] ========================================
+[2026-02-04 16:30:38] [INFO] Subscription: d2d4e571-e0f2-4f6c-901a-f88f7669bcba
+[2026-02-04 16:30:38] [INFO] Resource Group: EsDAICoE-Dev2
+[2026-02-04 16:30:38] [INFO] Output Directory: .\assessments\dev2-source\20260204-163038
+[2026-02-04 16:30:38] [INFO] 
+[2026-02-04 16:30:38] [INFO] Checking prerequisites...
+[2026-02-04 16:30:40] [SUCCESS] Azure CLI version: 2.81.0
+[2026-02-04 16:30:41] [SUCCESS] Logged in as: marco.presta@hrsdc-rhdcc.gc.ca
+[2026-02-04 16:30:43] [SUCCESS] Subscription access verified: EsDAICoESub
+[2026-02-04 16:30:58] [ERROR] Resource group EsDAICoE-Dev2 not found in subscription
+[2026-02-04 16:30:58] [ERROR] Prerequisites check failed. Exiting.

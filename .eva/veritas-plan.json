@@ -1,0 +1,476 @@
+{
+  "schema": "eva.veritas-plan.v1",
+  "generated_at": "2026-02-25T06:37:17.809Z",
+  "generated_from": [
+    "PLAN.md"
+  ],
+  "format_detected": "veritas",
+  "prefix": "F22",
+  "features": [
+    {
+      "id": "F22-01",
+      "title": "Purpose",
+      "source_heading": "## Feature: Purpose [ID=F22-01]",
+      "stories": []
+    },
+    {
+      "id": "F22-02",
+      "title": "Frozen Scope (January 29, 2026)",
+      "source_heading": "## Feature: Frozen Scope (January 29, 2026) [ID=F22-02]",
+      "stories": [
+        {
+          "id": "F22-02-001",
+          "title": "Architecture Decision: **Public Endpoints + Reuse Strategy**",
+          "feature_id": "F22-02",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-03",
+      "title": "Architecture Summary",
+      "source_heading": "## Feature: Architecture Summary [ID=F22-03]",
+      "stories": [
+        {
+          "id": "F22-03-001",
+          "title": "Resources to Deploy (12 total)",
+          "feature_id": "F22-03",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-04",
+      "title": "Prerequisites (Before Deployment)",
+      "source_heading": "## Feature: Prerequisites (Before Deployment) [ID=F22-04]",
+      "stories": [
+        {
+          "id": "F22-04-001",
+          "title": "1. Permissions Required",
+          "feature_id": "F22-04",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F22-04-001-T01",
+              "title": "**Current**: Reader + Cost Management Contributor on EsDAICoESub",
+              "story_id": "F22-04-001",
+              "feature_id": "F22-04",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-04-001-T02",
+              "title": "**Needed**: Contributor role on rg-sandbox-marco (infrastructure team to assign)",
+              "story_id": "F22-04-001",
+              "feature_id": "F22-04",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        },
+        {
+          "id": "F22-04-002",
+          "title": "2. Infrastructure Team Confirmation",
+          "feature_id": "F22-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-04-003",
+          "title": "3. Pre-Deployment Inventory (Phase 1.1)",
+          "feature_id": "F22-04",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F22-04-003-T01",
+              "title": "Azure OpenAI quota status",
+              "story_id": "F22-04-003",
+              "feature_id": "F22-04",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-04-003-T02",
+              "title": "APIM instance list",
+              "story_id": "F22-04-003",
+              "feature_id": "F22-04",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-04-003-T03",
+              "title": "Policy assignments on subscription",
+              "story_id": "F22-04-003",
+              "feature_id": "F22-04",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-04-003-T04",
+              "title": "OpenAI deployment names",
+              "story_id": "F22-04-003",
+              "feature_id": "F22-04",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-04-003-T05",
+              "title": "Cost allocation tags",
+              "story_id": "F22-04-003",
+              "feature_id": "F22-04",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F22-05",
+      "title": "Reference Architecture (Dev2 ? Sandbox Mapping)",
+      "source_heading": "## Feature: Reference Architecture (Dev2 ? Sandbox Mapping) [ID=F22-05]",
+      "stories": [
+        {
+          "id": "F22-05-001",
+          "title": "Dev2 (Source - 81 resources, validated 2026-02-03)",
+          "feature_id": "F22-05",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-05-002",
+          "title": "Sandbox (Target - 12 resources)",
+          "feature_id": "F22-05",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-06",
+      "title": "Key Decisions & Justifications",
+      "source_heading": "## Feature: Key Decisions & Justifications [ID=F22-06]",
+      "stories": [
+        {
+          "id": "F22-06-001",
+          "title": "Decision 1: Public Endpoints",
+          "feature_id": "F22-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-06-002",
+          "title": "Decision 2: Reuse Azure OpenAI",
+          "feature_id": "F22-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-06-003",
+          "title": "Decision 3: Basic Search Tier",
+          "feature_id": "F22-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-06-004",
+          "title": "Decision 4: Serverless Cosmos DB",
+          "feature_id": "F22-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-06-005",
+          "title": "Decision 5: B1 Web Apps",
+          "feature_id": "F22-06",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-07",
+      "title": "Success Criteria",
+      "source_heading": "## Feature: Success Criteria [ID=F22-07]",
+      "stories": [
+        {
+          "id": "F22-07-001",
+          "title": "Functional Requirements",
+          "feature_id": "F22-07",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F22-07-001-T01",
+              "title": "**RAG Pipeline**: Document upload ? OCR ? chunking ? embedding ? indexing working end-to-end",
+              "story_id": "F22-07-001",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-001-T02",
+              "title": "**Chat Interface**: Ask questions, receive answers with citations from indexed documents",
+              "story_id": "F22-07-001",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-001-T03",
+              "title": "**Search**: Hybrid vector+keyword search returning relevant results",
+              "story_id": "F22-07-001",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-001-T04",
+              "title": "**Authentication**: Azure AD login working for marco.presta@hrsdc-rhdcc.gc.ca",
+              "story_id": "F22-07-001",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        },
+        {
+          "id": "F22-07-002",
+          "title": "Performance Requirements",
+          "feature_id": "F22-07",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F22-07-002-T01",
+              "title": "**Chat Response Time**: <10 seconds for typical queries (vs. <3 seconds in dev2)",
+              "story_id": "F22-07-002",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-002-T02",
+              "title": "**Document Processing**: <5 minutes for 10-page PDF (vs. <2 minutes in dev2)",
+              "story_id": "F22-07-002",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-002-T03",
+              "title": "**Search Latency**: <2 seconds for keyword search (vs. <500ms in dev2)",
+              "story_id": "F22-07-002",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        },
+        {
+          "id": "F22-07-003",
+          "title": "Cost Requirements",
+          "feature_id": "F22-07",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F22-07-003-T01",
+              "title": "**Monthly Spend**: <$150 CAD/month measured via Cost Management",
+              "story_id": "F22-07-003",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-003-T02",
+              "title": "**Cost Alerts**: Configured at $100 (warning) and $150 (critical) thresholds",
+              "story_id": "F22-07-003",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-003-T03",
+              "title": "**Tag Compliance**: All resources tagged with owner, environment, project, cost_center",
+              "story_id": "F22-07-003",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        },
+        {
+          "id": "F22-07-004",
+          "title": "Operational Requirements",
+          "feature_id": "F22-07",
+          "source": "heading",
+          "tasks": [
+            {
+              "id": "F22-07-004-T01",
+              "title": "**Zero Impact**: Dev2 environment unaffected (no shared resource contention)",
+              "story_id": "F22-07-004",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-004-T02",
+              "title": "**Terraform State**: State file stored in Azure Blob with lock",
+              "story_id": "F22-07-004",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-004-T03",
+              "title": "**Secrets Management**: All secrets in Key Vault, no hardcoded credentials",
+              "story_id": "F22-07-004",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            },
+            {
+              "id": "F22-07-004-T04",
+              "title": "**Monitoring**: Application Insights telemetry enabled, basic health checks",
+              "story_id": "F22-07-004",
+              "feature_id": "F22-07",
+              "done": false,
+              "source": "checklist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F22-08",
+      "title": "Constraints",
+      "source_heading": "## Feature: Constraints [ID=F22-08]",
+      "stories": [
+        {
+          "id": "F22-08-001",
+          "title": "Hard Constraints (Cannot Change)",
+          "feature_id": "F22-08",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-08-002",
+          "title": "Soft Constraints (Can Negotiate)",
+          "feature_id": "F22-08",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-09",
+      "title": "Deployment Timeline",
+      "source_heading": "## Feature: Deployment Timeline [ID=F22-09]",
+      "stories": [
+        {
+          "id": "F22-09-001",
+          "title": "Phase 1: Pre-Deployment (Feb 3-4) ? COMPLETE",
+          "feature_id": "F22-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-09-002",
+          "title": "Phase 2: Infrastructure Team Actions (Feb 5-7)",
+          "feature_id": "F22-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-09-003",
+          "title": "Phase 3: Deployment (Feb 10-12)",
+          "feature_id": "F22-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-09-004",
+          "title": "Phase 4: Validation (Feb 12-13)",
+          "feature_id": "F22-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-09-005",
+          "title": "Phase 5: Cost Monitoring (Feb 14+)",
+          "feature_id": "F22-09",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-10",
+      "title": "Next Steps",
+      "source_heading": "## Feature: Next Steps [ID=F22-10]",
+      "stories": [
+        {
+          "id": "F22-10-001",
+          "title": "Immediate Actions (Today - Feb 3)",
+          "feature_id": "F22-10",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-10-002",
+          "title": "Waiting On",
+          "feature_id": "F22-10",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-10-003",
+          "title": "Blockers",
+          "feature_id": "F22-10",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-11",
+      "title": "Documentation",
+      "source_heading": "## Feature: Documentation [ID=F22-11]",
+      "stories": []
+    },
+    {
+      "id": "F22-12",
+      "title": "Project Housekeeping",
+      "source_heading": "## Feature: Project Housekeeping [ID=F22-12]",
+      "stories": [
+        {
+          "id": "F22-12-001",
+          "title": "Archived Content",
+          "feature_id": "F22-12",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-12-002",
+          "title": "Active Documentation",
+          "feature_id": "F22-12",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F22-12-003",
+          "title": "Housekeeping Policy",
+          "feature_id": "F22-12",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F22-13",
+      "title": "Contact & Escalation",
+      "source_heading": "## Feature: Contact & Escalation [ID=F22-13]",
+      "stories": []
+    }
+  ]
+}

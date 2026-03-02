@@ -1,0 +1,709 @@
+[
+  {
+    "accessTier": "Hot",
+    "accountMigrationInProgress": null,
+    "allowBlobPublicAccess": false,
+    "allowCrossTenantReplication": false,
+    "allowSharedKeyAccess": true,
+    "allowedCopyScope": null,
+    "azureFilesIdentityBasedAuthentication": null,
+    "blobRestoreStatus": null,
+    "creationTime": "2025-04-17T15:10:50.873871-04:00",
+    "customDomain": null,
+    "defaultToOAuthAuthentication": false,
+    "dnsEndpointType": "Standard",
+    "dualStackEndpointPreference": null,
+    "enableExtendedGroups": null,
+    "enableHttpsTrafficOnly": true,
+    "enableNfsV3": null,
+    "encryption": {
+      "encryptionIdentity": null,
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "requireInfrastructureEncryption": false,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-17T15:10:50.920741-04:00"
+        },
+        "file": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-17T15:10:50.920741-04:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "extendedLocation": null,
+    "failoverInProgress": null,
+    "geoPriorityReplicationStatus": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/EsDAICoE-Sandbox/providers/Microsoft.Storage/storageAccounts/esdaicoesandboxst",
+    "identity": null,
+    "immutableStorageWithVersioning": null,
+    "isHnsEnabled": true,
+    "isLocalUserEnabled": null,
+    "isSftpEnabled": false,
+    "isSkuConversionBlocked": null,
+    "keyCreationTime": {
+      "key1": "2025-04-17T15:10:50.920741-04:00",
+      "key2": "2025-04-17T15:10:50.920741-04:00"
+    },
+    "keyPolicy": null,
+    "kind": "StorageV2",
+    "largeFileSharesState": "Enabled",
+    "lastGeoFailoverTime": null,
+    "location": "canadaeast",
+    "minimumTlsVersion": "TLS1_2",
+    "name": "esdaicoesandboxst",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Deny",
+      "ipRules": [
+        {
+          "action": "Allow",
+          "ipAddressOrRange": "205.194.36.63"
+        }
+      ],
+      "ipv6Rules": [],
+      "resourceAccessRules": [
+        {
+          "resourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/providers/Microsoft.Security/datascanners/storageDataScanner",
+          "tenantId": "9ed55846-8a81-4246-acd8-b1a01abfc0d1"
+        }
+      ],
+      "virtualNetworkRules": []
+    },
+    "placement": null,
+    "primaryEndpoints": {
+      "blob": "https://esdaicoesandboxst.blob.core.windows.net/",
+      "dfs": "https://esdaicoesandboxst.dfs.core.windows.net/",
+      "file": "https://esdaicoesandboxst.file.core.windows.net/",
+      "internetEndpoints": null,
+      "ipv6Endpoints": null,
+      "microsoftEndpoints": null,
+      "queue": "https://esdaicoesandboxst.queue.core.windows.net/",
+      "table": "https://esdaicoesandboxst.table.core.windows.net/",
+      "web": "https://esdaicoesandboxst.z27.web.core.windows.net/"
+    },
+    "primaryLocation": "canadaeast",
+    "privateEndpointConnections": [],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "resourceGroup": "EsDAICoE-Sandbox",
+    "routingPreference": null,
+    "sasPolicy": null,
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "storageAccountSkuConversionStatus": null,
+    "tags": {
+      "Fin_FinancialAuthority": "todd.whitley@hrsdc-rhdcc.gc.ca",
+      "FinancialAuthority": "Whitley, Todd",
+      "ProductOwner": "oleg.besedin@hrsdc-rhdcc.gc.ca",
+      "ai_client": "AICOE",
+      "ai_costcenter": "NiashaB-233020",
+      "ai_manager": "Niasha Blake",
+      "ai_subclient": "aicoe",
+      "rpa_costcenter": "",
+      "shared_cost": "TRUE",
+      "ssc_cbrid": "2133"
+    },
+    "type": "Microsoft.Storage/storageAccounts",
+    "zones": null
+  },
+  {
+    "accessTier": "Hot",
+    "accountMigrationInProgress": null,
+    "allowBlobPublicAccess": false,
+    "allowCrossTenantReplication": false,
+    "allowSharedKeyAccess": true,
+    "allowedCopyScope": null,
+    "azureFilesIdentityBasedAuthentication": null,
+    "blobRestoreStatus": null,
+    "creationTime": "2025-04-29T14:55:09.977339-04:00",
+    "customDomain": null,
+    "defaultToOAuthAuthentication": false,
+    "dnsEndpointType": "Standard",
+    "dualStackEndpointPreference": null,
+    "enableExtendedGroups": null,
+    "enableHttpsTrafficOnly": true,
+    "enableNfsV3": null,
+    "encryption": {
+      "encryptionIdentity": null,
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "requireInfrastructureEncryption": false,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-29T14:55:10.086787-04:00"
+        },
+        "file": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-29T14:55:10.086787-04:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "extendedLocation": null,
+    "failoverInProgress": null,
+    "geoPriorityReplicationStatus": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/EsDAICoE-Sandbox/providers/Microsoft.Storage/storageAccounts/eqvispocaistorage",
+    "identity": null,
+    "immutableStorageWithVersioning": null,
+    "isHnsEnabled": null,
+    "isLocalUserEnabled": null,
+    "isSftpEnabled": null,
+    "isSkuConversionBlocked": null,
+    "keyCreationTime": {
+      "key1": "2025-04-29T14:55:10.086787-04:00",
+      "key2": "2025-04-29T14:55:10.086787-04:00"
+    },
+    "keyPolicy": null,
+    "kind": "StorageV2",
+    "largeFileSharesState": "Enabled",
+    "lastGeoFailoverTime": null,
+    "location": "canadacentral",
+    "minimumTlsVersion": "TLS1_2",
+    "name": "eqvispocaistorage",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Deny",
+      "ipRules": [
+        {
+          "action": "Allow",
+          "ipAddressOrRange": "0.0.0.0/0"
+        }
+      ],
+      "ipv6Rules": [],
+      "resourceAccessRules": [
+        {
+          "resourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/providers/Microsoft.Security/datascanners/storageDataScanner",
+          "tenantId": "9ed55846-8a81-4246-acd8-b1a01abfc0d1"
+        }
+      ],
+      "virtualNetworkRules": []
+    },
+    "placement": null,
+    "primaryEndpoints": {
+      "blob": "https://eqvispocaistorage.blob.core.windows.net/",
+      "dfs": "https://eqvispocaistorage.dfs.core.windows.net/",
+      "file": "https://eqvispocaistorage.file.core.windows.net/",
+      "internetEndpoints": null,
+      "ipv6Endpoints": null,
+      "microsoftEndpoints": null,
+      "queue": "https://eqvispocaistorage.queue.core.windows.net/",
+      "table": "https://eqvispocaistorage.table.core.windows.net/",
+      "web": "https://eqvispocaistorage.z9.web.core.windows.net/"
+    },
+    "primaryLocation": "canadacentral",
+    "privateEndpointConnections": [],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "resourceGroup": "EsDAICoE-Sandbox",
+    "routingPreference": null,
+    "sasPolicy": null,
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "storageAccountSkuConversionStatus": null,
+    "tags": {
+      "Fin_FinancialAuthority": "todd.whitley@hrsdc-rhdcc.gc.ca",
+      "FinancialAuthority": "Whitley, Todd",
+      "ProductOwner": "oleg.besedin@hrsdc-rhdcc.gc.ca",
+      "ai_client": "AICOE",
+      "ai_costcenter": "NiashaB-233020",
+      "ai_manager": "Niasha Blake",
+      "ai_subclient": "aicoe",
+      "rpa_costcenter": "",
+      "shared_cost": "TRUE",
+      "ssc_cbrid": "2133"
+    },
+    "type": "Microsoft.Storage/storageAccounts",
+    "zones": null
+  },
+  {
+    "accessTier": "Hot",
+    "accountMigrationInProgress": null,
+    "allowBlobPublicAccess": false,
+    "allowCrossTenantReplication": false,
+    "allowSharedKeyAccess": true,
+    "allowedCopyScope": null,
+    "azureFilesIdentityBasedAuthentication": null,
+    "blobRestoreStatus": null,
+    "creationTime": "2025-04-29T11:38:18.65964-04:00",
+    "customDomain": null,
+    "defaultToOAuthAuthentication": false,
+    "dnsEndpointType": "Standard",
+    "dualStackEndpointPreference": null,
+    "enableExtendedGroups": null,
+    "enableHttpsTrafficOnly": true,
+    "enableNfsV3": null,
+    "encryption": {
+      "encryptionIdentity": null,
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "requireInfrastructureEncryption": false,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-29T11:38:18.769024-04:00"
+        },
+        "file": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-29T11:38:18.769024-04:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "extendedLocation": null,
+    "failoverInProgress": null,
+    "geoPriorityReplicationStatus": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/EsDAICoE-Sandbox/providers/Microsoft.Storage/storageAccounts/eqvispocdata",
+    "identity": null,
+    "immutableStorageWithVersioning": null,
+    "isHnsEnabled": null,
+    "isLocalUserEnabled": null,
+    "isSftpEnabled": null,
+    "isSkuConversionBlocked": null,
+    "keyCreationTime": {
+      "key1": "2025-04-29T11:38:18.769024-04:00",
+      "key2": "2025-04-29T11:38:18.769024-04:00"
+    },
+    "keyPolicy": null,
+    "kind": "StorageV2",
+    "largeFileSharesState": "Enabled",
+    "lastGeoFailoverTime": null,
+    "location": "canadacentral",
+    "minimumTlsVersion": "TLS1_2",
+    "name": "eqvispocdata",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Deny",
+      "ipRules": [
+        {
+          "action": "Allow",
+          "ipAddressOrRange": "0.0.0.0/0"
+        }
+      ],
+      "ipv6Rules": [],
+      "resourceAccessRules": [
+        {
+          "resourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/providers/Microsoft.Security/datascanners/storageDataScanner",
+          "tenantId": "9ed55846-8a81-4246-acd8-b1a01abfc0d1"
+        }
+      ],
+      "virtualNetworkRules": []
+    },
+    "placement": null,
+    "primaryEndpoints": {
+      "blob": "https://eqvispocdata.blob.core.windows.net/",
+      "dfs": "https://eqvispocdata.dfs.core.windows.net/",
+      "file": "https://eqvispocdata.file.core.windows.net/",
+      "internetEndpoints": null,
+      "ipv6Endpoints": null,
+      "microsoftEndpoints": null,
+      "queue": "https://eqvispocdata.queue.core.windows.net/",
+      "table": "https://eqvispocdata.table.core.windows.net/",
+      "web": "https://eqvispocdata.z9.web.core.windows.net/"
+    },
+    "primaryLocation": "canadacentral",
+    "privateEndpointConnections": [],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "resourceGroup": "EsDAICoE-Sandbox",
+    "routingPreference": null,
+    "sasPolicy": null,
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "storageAccountSkuConversionStatus": null,
+    "tags": {
+      "Fin_FinancialAuthority": "todd.whitley@hrsdc-rhdcc.gc.ca",
+      "FinancialAuthority": "Whitley, Todd",
+      "ProductOwner": "oleg.besedin@hrsdc-rhdcc.gc.ca",
+      "ProjectType": "aoai-your-data-service",
+      "ai_client": "AICOE",
+      "ai_costcenter": "NiashaB-233020",
+      "ai_manager": "Niasha Blake",
+      "ai_subclient": "aicoe",
+      "rpa_costcenter": "",
+      "shared_cost": "TRUE",
+      "ssc_cbrid": "2133"
+    },
+    "type": "Microsoft.Storage/storageAccounts",
+    "zones": null
+  },
+  {
+    "accessTier": "Hot",
+    "accountMigrationInProgress": null,
+    "allowBlobPublicAccess": false,
+    "allowCrossTenantReplication": false,
+    "allowSharedKeyAccess": true,
+    "allowedCopyScope": null,
+    "azureFilesIdentityBasedAuthentication": null,
+    "blobRestoreStatus": null,
+    "creationTime": "2025-04-29T10:55:45.038509-04:00",
+    "customDomain": null,
+    "defaultToOAuthAuthentication": false,
+    "dnsEndpointType": "Standard",
+    "dualStackEndpointPreference": null,
+    "enableExtendedGroups": null,
+    "enableHttpsTrafficOnly": true,
+    "enableNfsV3": null,
+    "encryption": {
+      "encryptionIdentity": null,
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "requireInfrastructureEncryption": false,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-29T10:55:45.148-04:00"
+        },
+        "file": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2025-04-29T10:55:45.148-04:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "extendedLocation": null,
+    "failoverInProgress": null,
+    "geoPriorityReplicationStatus": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/EsDAICoE-Sandbox/providers/Microsoft.Storage/storageAccounts/eqvispocfuncstorage",
+    "identity": null,
+    "immutableStorageWithVersioning": null,
+    "isHnsEnabled": null,
+    "isLocalUserEnabled": null,
+    "isSftpEnabled": null,
+    "isSkuConversionBlocked": null,
+    "keyCreationTime": {
+      "key1": "2025-04-29T10:55:45.132286-04:00",
+      "key2": "2025-04-29T10:55:45.132286-04:00"
+    },
+    "keyPolicy": null,
+    "kind": "StorageV2",
+    "largeFileSharesState": "Enabled",
+    "lastGeoFailoverTime": null,
+    "location": "canadacentral",
+    "minimumTlsVersion": "TLS1_2",
+    "name": "eqvispocfuncstorage",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Deny",
+      "ipRules": [
+        {
+          "action": "Allow",
+          "ipAddressOrRange": "0.0.0.0/0"
+        }
+      ],
+      "ipv6Rules": [],
+      "resourceAccessRules": [
+        {
+          "resourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/providers/Microsoft.Security/datascanners/storageDataScanner",
+          "tenantId": "9ed55846-8a81-4246-acd8-b1a01abfc0d1"
+        }
+      ],
+      "virtualNetworkRules": []
+    },
+    "placement": null,
+    "primaryEndpoints": {
+      "blob": "https://eqvispocfuncstorage.blob.core.windows.net/",
+      "dfs": "https://eqvispocfuncstorage.dfs.core.windows.net/",
+      "file": "https://eqvispocfuncstorage.file.core.windows.net/",
+      "internetEndpoints": null,
+      "ipv6Endpoints": null,
+      "microsoftEndpoints": null,
+      "queue": "https://eqvispocfuncstorage.queue.core.windows.net/",
+      "table": "https://eqvispocfuncstorage.table.core.windows.net/",
+      "web": "https://eqvispocfuncstorage.z9.web.core.windows.net/"
+    },
+    "primaryLocation": "canadacentral",
+    "privateEndpointConnections": [],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "resourceGroup": "EsDAICoE-Sandbox",
+    "routingPreference": null,
+    "sasPolicy": null,
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "storageAccountSkuConversionStatus": null,
+    "tags": {
+      "Fin_FinancialAuthority": "todd.whitley@hrsdc-rhdcc.gc.ca",
+      "FinancialAuthority": "Whitley, Todd",
+      "ProductOwner": "oleg.besedin@hrsdc-rhdcc.gc.ca",
+      "ai_client": "AICOE",
+      "ai_costcenter": "NiashaB-233020",
+      "ai_manager": "Niasha Blake",
+      "ai_subclient": "aicoe",
+      "rpa_costcenter": "",
+      "shared_cost": "TRUE",
+      "ssc_cbrid": "2133"
+    },
+    "type": "Microsoft.Storage/storageAccounts",
+    "zones": null
+  },
+  {
+    "accessTier": "Hot",
+    "accountMigrationInProgress": null,
+    "allowBlobPublicAccess": false,
+    "allowCrossTenantReplication": false,
+    "allowSharedKeyAccess": null,
+    "allowedCopyScope": null,
+    "azureFilesIdentityBasedAuthentication": null,
+    "blobRestoreStatus": null,
+    "creationTime": "2026-02-03T12:18:53.407915-05:00",
+    "customDomain": null,
+    "defaultToOAuthAuthentication": null,
+    "dnsEndpointType": null,
+    "dualStackEndpointPreference": null,
+    "enableExtendedGroups": null,
+    "enableHttpsTrafficOnly": true,
+    "enableNfsV3": null,
+    "encryption": {
+      "encryptionIdentity": null,
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "requireInfrastructureEncryption": null,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2026-02-03T12:18:53.595365-05:00"
+        },
+        "file": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2026-02-03T12:18:53.595365-05:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "extendedLocation": null,
+    "failoverInProgress": null,
+    "geoPriorityReplicationStatus": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/EsDAICoE-Sandbox/providers/Microsoft.Storage/storageAccounts/marcosand20260203",
+    "identity": null,
+    "immutableStorageWithVersioning": null,
+    "isHnsEnabled": null,
+    "isLocalUserEnabled": null,
+    "isSftpEnabled": null,
+    "isSkuConversionBlocked": null,
+    "keyCreationTime": {
+      "key1": "2026-02-03T12:18:53.579736-05:00",
+      "key2": "2026-02-03T12:18:53.579736-05:00"
+    },
+    "keyPolicy": null,
+    "kind": "StorageV2",
+    "largeFileSharesState": null,
+    "lastGeoFailoverTime": null,
+    "location": "canadacentral",
+    "minimumTlsVersion": "TLS1_2",
+    "name": "marcosand20260203",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Deny",
+      "ipRules": [
+        {
+          "action": "Allow",
+          "ipAddressOrRange": "173.178.152.45"
+        }
+      ],
+      "ipv6Rules": [],
+      "resourceAccessRules": [
+        {
+          "resourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/providers/Microsoft.Security/datascanners/storageDataScanner",
+          "tenantId": "9ed55846-8a81-4246-acd8-b1a01abfc0d1"
+        }
+      ],
+      "virtualNetworkRules": []
+    },
+    "placement": null,
+    "primaryEndpoints": {
+      "blob": "https://marcosand20260203.blob.core.windows.net/",
+      "dfs": "https://marcosand20260203.dfs.core.windows.net/",
+      "file": "https://marcosand20260203.file.core.windows.net/",
+      "internetEndpoints": null,
+      "ipv6Endpoints": null,
+      "microsoftEndpoints": null,
+      "queue": "https://marcosand20260203.queue.core.windows.net/",
+      "table": "https://marcosand20260203.table.core.windows.net/",
+      "web": "https://marcosand20260203.z9.web.core.windows.net/"
+    },
+    "primaryLocation": "canadacentral",
+    "privateEndpointConnections": [],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": null,
+    "resourceGroup": "EsDAICoE-Sandbox",
+    "routingPreference": null,
+    "sasPolicy": null,
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "storageAccountSkuConversionStatus": null,
+    "tags": {
+      "environment": "dev",
+      "owner": "marco.presta@hrsdc-rhdcc.gc.ca",
+      "project": "eva-sandbox"
+    },
+    "type": "Microsoft.Storage/storageAccounts",
+    "zones": null
+  },
+  {
+    "accessTier": "Hot",
+    "accountMigrationInProgress": null,
+    "allowBlobPublicAccess": false,
+    "allowCrossTenantReplication": false,
+    "allowSharedKeyAccess": null,
+    "allowedCopyScope": null,
+    "azureFilesIdentityBasedAuthentication": null,
+    "blobRestoreStatus": null,
+    "creationTime": "2026-02-03T17:33:30.45411-05:00",
+    "customDomain": null,
+    "defaultToOAuthAuthentication": null,
+    "dnsEndpointType": null,
+    "dualStackEndpointPreference": null,
+    "enableExtendedGroups": null,
+    "enableHttpsTrafficOnly": true,
+    "enableNfsV3": null,
+    "encryption": {
+      "encryptionIdentity": null,
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "requireInfrastructureEncryption": null,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2026-02-03T17:33:30.626004-05:00"
+        },
+        "file": {
+          "enabled": true,
+          "keyType": "Account",
+          "lastEnabledTime": "2026-02-03T17:33:30.626004-05:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "extendedLocation": null,
+    "failoverInProgress": null,
+    "geoPriorityReplicationStatus": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/EsDAICoE-Sandbox/providers/Microsoft.Storage/storageAccounts/marcosandboxfinopshub",
+    "identity": null,
+    "immutableStorageWithVersioning": null,
+    "isHnsEnabled": true,
+    "isLocalUserEnabled": null,
+    "isSftpEnabled": null,
+    "isSkuConversionBlocked": null,
+    "keyCreationTime": {
+      "key1": "2026-02-03T17:33:30.610363-05:00",
+      "key2": "2026-02-03T17:33:30.610363-05:00"
+    },
+    "keyPolicy": null,
+    "kind": "StorageV2",
+    "largeFileSharesState": null,
+    "lastGeoFailoverTime": null,
+    "location": "canadacentral",
+    "minimumTlsVersion": "TLS1_2",
+    "name": "marcosandboxfinopshub",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Deny",
+      "ipRules": [
+        {
+          "action": "Allow",
+          "ipAddressOrRange": "173.178.152.45"
+        }
+      ],
+      "ipv6Rules": [],
+      "resourceAccessRules": [
+        {
+          "resourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/providers/Microsoft.Security/datascanners/storageDataScanner",
+          "tenantId": "9ed55846-8a81-4246-acd8-b1a01abfc0d1"
+        }
+      ],
+      "virtualNetworkRules": []
+    },
+    "placement": null,
+    "primaryEndpoints": {
+      "blob": "https://marcosandboxfinopshub.blob.core.windows.net/",
+      "dfs": "https://marcosandboxfinopshub.dfs.core.windows.net/",
+      "file": "https://marcosandboxfinopshub.file.core.windows.net/",
+      "internetEndpoints": null,
+      "ipv6Endpoints": null,
+      "microsoftEndpoints": null,
+      "queue": "https://marcosandboxfinopshub.queue.core.windows.net/",
+      "table": "https://marcosandboxfinopshub.table.core.windows.net/",
+      "web": "https://marcosandboxfinopshub.z9.web.core.windows.net/"
+    },
+    "primaryLocation": "canadacentral",
+    "privateEndpointConnections": [],
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": null,
+    "resourceGroup": "EsDAICoE-Sandbox",
+    "routingPreference": null,
+    "sasPolicy": null,
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "storageAccountSkuConversionStatus": null,
+    "tags": {
+      "owner": "marco.presta@hrsdc-rhdcc.gc.ca",
+      "project": "sandbox-cost-tracking",
+      "purpose": "finops-hub"
+    },
+    "type": "Microsoft.Storage/storageAccounts",
+    "zones": null
+  }
+]

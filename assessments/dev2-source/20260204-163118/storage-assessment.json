@@ -1,0 +1,1305 @@
+{
+  "timestamp": "2026-02-04 16:38:27",
+  "subscription": "d2d4e571-e0f2-4f6c-901a-f88f7669bcba",
+  "resourceGroup": "infoasst-dev2",
+  "storageAccountCount": 1,
+  "totalSizeGB": 2.26,
+  "totalBlobCount": 18944.0,
+  "storageAccounts": [
+    {
+      "name": "infoasststoredev2",
+      "location": "canadacentral",
+      "sku": "Standard_LRS",
+      "kind": "StorageV2",
+      "createdTime": "2025-09-12T15:56:26.419281-04:00",
+      "primaryEndpoints": {
+        "blob": "https://infoasststoredev2.blob.core.windows.net/",
+        "dfs": "https://infoasststoredev2.dfs.core.windows.net/",
+        "file": "https://infoasststoredev2.file.core.windows.net/",
+        "internetEndpoints": null,
+        "ipv6Endpoints": null,
+        "microsoftEndpoints": null,
+        "queue": "https://infoasststoredev2.queue.core.windows.net/",
+        "table": "https://infoasststoredev2.table.core.windows.net/",
+        "web": "https://infoasststoredev2.z9.web.core.windows.net/"
+      },
+      "containers": [
+        {
+          "name": "azure-webjobs-hosts",
+          "blobCount": 7,
+          "sizeBytes": 715.0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-15T11:11:17-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "concurrency/infoasst-func-dev2/concurrencyStatus.json",
+            "locks/infoasst-func-dev2/Host.Functions.FileDeletion.Listener",
+            "locks/infoasst-func-dev2/Host.Functions.UrlScrapper.Listener",
+            "locks/infoasst-func-dev2/host",
+            "synctriggers/infoasst-func-dev2/last"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 7
+          }
+        },
+        {
+          "name": "azure-webjobs-secrets",
+          "blobCount": 1,
+          "sizeBytes": 830.0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-15T11:13:37-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": "infoasst-func-dev2/host.json",
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 1
+          }
+        },
+        {
+          "name": "bdm-landing",
+          "blobCount": 5000,
+          "sizeBytes": 761043997.0,
+          "sizeGB": 0.709,
+          "publicAccess": "None",
+          "lastModified": "2026-01-16T15:06:02-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "jurisprudence/english/fc/fc_2001-FCT-104_45403_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-1192_39797_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-11_39940_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-1248_38256_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-1350_38600_en.pdf"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 5000
+          }
+        },
+        {
+          "name": "config",
+          "blobCount": 3,
+          "sizeBytes": 369984.0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:58:57-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "Lexicon.xlsx",
+            "config.json",
+            "examplelist.json"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 3
+          }
+        },
+        {
+          "name": "content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:00-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "function",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "logs",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:06-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj1-content",
+          "blobCount": 1593,
+          "sizeBytes": 117678345.0,
+          "sizeGB": 0.11,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:34-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "AssistMe/knowledge_articles_r2r3_FR.xml/knowledge_articles_r2r3_FR-0.json",
+            "AssistMe/knowledge_articles_r2r3_FR.xml/knowledge_articles_r2r3_FR-1.json",
+            "AssistMe/knowledge_articles_r2r3_FR.xml/knowledge_articles_r2r3_FR-10.json",
+            "AssistMe/knowledge_articles_r2r3_FR.xml/knowledge_articles_r2r3_FR-100.json",
+            "AssistMe/knowledge_articles_r2r3_FR.xml/knowledge_articles_r2r3_FR-101.json"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 1593
+          }
+        },
+        {
+          "name": "proj1-upload",
+          "blobCount": 3,
+          "sizeBytes": 6232543.0,
+          "sizeGB": 0.006,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:10-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "AssistMe/knowledge_articles_r2r3_FR.xml",
+            "AssistMe/knowledge_articles_r2r3_en_2.xml",
+            "Calculating_Income.pdf"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 3
+          }
+        },
+        {
+          "name": "proj10-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:41-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj10-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:03-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj11-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:24-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj11-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:38-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj12-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:54-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj12-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:00-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj13-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:33-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj13-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:29-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj14-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:25-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj14-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:38-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj15-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:25-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj15-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:59-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj16-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:54-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj16-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:00-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj17-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:54-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj17-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj18-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:55-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj18-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:06-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj19-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:56-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj19-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj2-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:31-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj2-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:03-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj20-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj20-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:00-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj21-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:55-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj21-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:29-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj22-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:59-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj22-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj23-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:25-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj23-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:38-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj24-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:26-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj24-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj25-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:27-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj25-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:30-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj26-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:25-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj26-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj27-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:55-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj27-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj28-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj28-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:30-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj29-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj29-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj3-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:37-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj3-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:34-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj30-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:55-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj30-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:06-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj31-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:56-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj31-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:58-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj32-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:58-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj32-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:33-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj33-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:26-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj33-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:59-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj34-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:24-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj34-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:53-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj35-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:24-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj35-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:53-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj36-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:56-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj36-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:35-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj37-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:24-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj37-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:35-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj38-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:27-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj38-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj39-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:24-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj39-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:38-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj4-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:38-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj4-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:04-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj40-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:59-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj40-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:30-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj41-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:57-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj41-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:06-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj42-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:56-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj42-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:57-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj43-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj43-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:58-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj44-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:27-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj44-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:47:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj45-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:59-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj45-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:54-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj46-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:44:24-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj46-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:29-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj47-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:26-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj47-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:00-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj48-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:32-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj48-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:34-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj49-content",
+          "blobCount": 5000,
+          "sizeBytes": 372902188.0,
+          "sizeGB": 0.347,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:45:58-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "fca_2007-FCA-227_35643_en.pdf/fca_2007-FCA-227_35643_en-0.json",
+            "fca_2007-FCA-227_35643_en.pdf/fca_2007-FCA-227_35643_en-1.json",
+            "fca_2007-FCA-227_35643_en.pdf/fca_2007-FCA-227_35643_en-2.json",
+            "jurisprudence/english/fc/fc_2001-FCT-104_45403_en.pdf/fc_2001-FCT-104_45403_en-0.json",
+            "jurisprudence/english/fc/fc_2001-FCT-104_45403_en.pdf/fc_2001-FCT-104_45403_en-1.json"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 5000
+          }
+        },
+        {
+          "name": "proj49-upload",
+          "blobCount": 7337,
+          "sizeBytes": 1167845804.0,
+          "sizeGB": 1.088,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:46:31-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "fca_2007-FCA-227_35643_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-104_45403_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-1192_39797_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-11_39940_en.pdf",
+            "jurisprudence/english/fc/fc_2001-FCT-1248_38256_en.pdf"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 7337
+          }
+        },
+        {
+          "name": "proj5-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:30-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj5-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:33-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj50-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:54-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj50-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-10-03T14:43:55-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj6-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:30-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj6-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:02-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj7-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:47-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj7-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:09-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj8-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:01-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj8-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:12-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj9-content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:31-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "proj9-upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T16:00:19-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:09-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "website",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-09-12T15:59:16-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        }
+      ],
+      "totalSizeGB": 2.260,
+      "totalBlobCount": 18944,
+      "accessTier": "Hot",
+      "allowBlobPublicAccess": false,
+      "networkRuleSet": {
+        "defaultAction": "Deny",
+        "bypass": "AzureServices",
+        "ipRules": 0,
+        "virtualNetworkRules": 2
+      },
+      "supportsHttpsTrafficOnly": true,
+      "minimumTlsVersion": "TLS1_2",
+      "hasPermissions": false,
+      "errors": []
+    }
+  ]
+}

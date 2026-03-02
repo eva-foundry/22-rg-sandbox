@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "schema": "eva.reconciliation.v2",
+    "generated_at": "2026-02-25T06:37:18.356Z",
+    "repo": "C:\\AICOE\\eva-foundation\\22-rg-sandbox",
+    "discovery_path": "C:\\AICOE\\eva-foundation\\22-rg-sandbox\\.eva\\discovery.json"
+  },
+  "coverage": {
+    "stories_total": 29,
+    "stories_with_artifacts": 29,
+    "stories_with_evidence": 0,
+    "consistency_score": 0
+  },
+  "features": [
+    {
+      "id": "F22-01",
+      "title": "Purpose",
+      "story_count": 0,
+      "stories_with_artifacts": 0,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 0,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-02",
+      "title": "Frozen Scope (January 29, 2026)",
+      "story_count": 1,
+      "stories_with_artifacts": 1,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-03",
+      "title": "Architecture Summary",
+      "story_count": 1,
+      "stories_with_artifacts": 1,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-04",
+      "title": "Prerequisites (Before Deployment)",
+      "story_count": 3,
+      "stories_with_artifacts": 3,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-05",
+      "title": "Reference Architecture (Dev2 ? Sandbox Mapping)",
+      "story_count": 2,
+      "stories_with_artifacts": 2,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-06",
+      "title": "Key Decisions & Justifications",
+      "story_count": 5,
+      "stories_with_artifacts": 5,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-07",
+      "title": "Success Criteria",
+      "story_count": 4,
+      "stories_with_artifacts": 4,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-08",
+      "title": "Constraints",
+      "story_count": 2,
+      "stories_with_artifacts": 2,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-09",
+      "title": "Deployment Timeline",
+      "story_count": 5,
+      "stories_with_artifacts": 5,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-10",
+      "title": "Next Steps",
+      "story_count": 3,
+      "stories_with_artifacts": 3,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-11",
+      "title": "Documentation",
+      "story_count": 0,
+      "stories_with_artifacts": 0,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 0,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-12",
+      "title": "Project Housekeeping",
+      "story_count": 3,
+      "stories_with_artifacts": 3,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 50,
+      "gap_count": 0
+    },
+    {
+      "id": "F22-13",
+      "title": "Contact & Escalation",
+      "story_count": 0,
+      "stories_with_artifacts": 0,
+      "stories_with_evidence": 0,
+      "consistency_score": 0,
+      "mti": 0,
+      "gap_count": 0
+    }
+  ],
+  "gaps": []
+}

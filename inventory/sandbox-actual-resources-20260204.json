@@ -1,0 +1,116 @@
+[
+  {
+    "createdTime": "2026-02-03T12:13:37.341007-05:00",
+    "name": "marcosandboxacr20260203",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.ContainerRegistry/registries"
+  },
+  {
+    "createdTime": "2026-02-03T12:13:51.908208-05:00",
+    "name": "marco-sandbox-search",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Search/searchServices"
+  },
+  {
+    "createdTime": "2026-02-03T12:13:57.886408-05:00",
+    "name": "marco-sandbox-cosmos",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.DocumentDB/databaseAccounts"
+  },
+  {
+    "createdTime": "2026-02-03T12:14:16.099946-05:00",
+    "name": "marco-sandbox-asp-backend",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "createdTime": "2026-02-03T12:14:21.407716-05:00",
+    "name": "marco-sandbox-asp-enrichment",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "createdTime": "2026-02-03T12:14:33.190301-05:00",
+    "name": "marco-sandbox-backend",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Web/sites"
+  },
+  {
+    "createdTime": "2026-02-03T12:15:01.687222-05:00",
+    "name": "marco-sandbox-enrichment",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Web/sites"
+  },
+  {
+    "createdTime": "2026-02-03T12:16:46.721865-05:00",
+    "name": "marcosandkv20260203",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.KeyVault/vaults"
+  },
+  {
+    "createdTime": "2026-02-03T12:18:53.320997-05:00",
+    "name": "marcosand20260203",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Storage/storageAccounts"
+  },
+  {
+    "createdTime": "2026-02-03T12:19:21.152695-05:00",
+    "name": "marcosandacr20260203",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.ContainerRegistry/registries"
+  },
+  {
+    "createdTime": "2026-02-03T12:52:02.537774-05:00",
+    "name": "marco-sandbox-asp-func",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "createdTime": "2026-02-03T12:52:33.755152-05:00",
+    "name": "marco-sandbox-func",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Web/sites"
+  },
+  {
+    "createdTime": "2026-02-03T12:52:59.035101-05:00",
+    "name": "marco-sandbox-func",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Insights/components"
+  },
+  {
+    "createdTime": "2026-02-03T13:03:02.693002-05:00",
+    "name": "Failure Anomalies - marco-sandbox-func",
+    "provisioningState": "Succeeded",
+    "type": "microsoft.alertsmanagement/smartDetectorAlertRules"
+  },
+  {
+    "createdTime": "2026-02-03T14:41:00.383974-05:00",
+    "name": "marco-sandbox-apim",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.ApiManagement/service"
+  },
+  {
+    "createdTime": "2026-02-03T17:33:30.257262-05:00",
+    "name": "marcosandboxfinopshub",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.Storage/storageAccounts"
+  },
+  {
+    "createdTime": "2026-02-03T20:30:51.404417-05:00",
+    "name": "marcosand20260203-eb072872-8e2e-42e3-9617-f4a1247bbb63",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.EventGrid/systemTopics"
+  },
+  {
+    "createdTime": "2026-02-03T20:30:52.083238-05:00",
+    "name": "marcosandboxfinopshub-52dd1c15-63a9-48a2-842e-97bda61d811f",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.EventGrid/systemTopics"
+  },
+  {
+    "createdTime": "2026-02-04T11:56:11.100109-05:00",
+    "name": "marco-sandbox-openai",
+    "provisioningState": "Succeeded",
+    "type": "Microsoft.CognitiveServices/accounts"
+  }
+]

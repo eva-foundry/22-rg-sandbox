@@ -1,0 +1,173 @@
+{
+  "collection_date": "2026-02-03T08:02:21",
+  "subscription": "EsDAICoESub",
+  "subscription_id": "d2d4e571-e0f2-4f6c-901a-f88f7669bcba",
+  "total_resources": 1180,
+  "total_resource_groups": 40,
+  "openai_instances": {
+    "total_count": 5,
+    "instances": [
+      {
+        "name": "infoasst-aoai-dev2",
+        "resource_group": "infoasst-dev2",
+        "location": "canadaeast",
+        "sku": "S0",
+        "kind": "OpenAI",
+        "deployments": ["gpt-4o", "dev2-text-embedding"],
+        "reusability_score": 95,
+        "estimated_cost_monthly": "$200-300",
+        "recommendation": "HIGH PRIORITY REUSE for sandbox"
+      },
+      {
+        "name": "esdaicoe-ai-foundry-openai",
+        "resource_group": "esdaicoe-foundry-rg",
+        "location": "canadaeast",
+        "sku": "S0",
+        "kind": "OpenAI",
+        "deployments": ["gpt-4", "gpt-4-turbo", "text-embedding-ada-002"],
+        "reusability_score": 85,
+        "estimated_cost_monthly": "$300-500",
+        "recommendation": "Consider for enterprise-wide AI toolkit"
+      },
+      {
+        "name": "evachat-openai-dev",
+        "resource_group": "evachat-dev-rg",
+        "location": "canadaeast",
+        "sku": "S0",
+        "kind": "OpenAI",
+        "reusability_score": 70,
+        "estimated_cost_monthly": "$100-200",
+        "recommendation": "Project-specific, low reuse potential"
+      },
+      {
+        "name": "infoasst-aoai-stage",
+        "resource_group": "infoasst-stage",
+        "location": "canadaeast",
+        "sku": "S0",
+        "kind": "OpenAI",
+        "reusability_score": 60,
+        "estimated_cost_monthly": "$150-250",
+        "recommendation": "Staging environment, avoid production dependencies"
+      },
+      {
+        "name": "legacy-openai-instance",
+        "resource_group": "legacy-ai-rg",
+        "location": "eastus",
+        "sku": "S0",
+        "kind": "OpenAI",
+        "reusability_score": 20,
+        "estimated_cost_monthly": "$50-100",
+        "recommendation": "Legacy, consider decommission"
+      }
+    ]
+  },
+  "apim_instances": {
+    "total_count": 2,
+    "instances": [
+      {
+        "name": "esdaicoe-cac-apim-dev",
+        "resource_group": "esdaicoe-apim-rg",
+        "location": "canadacentral",
+        "sku": "Developer",
+        "estimated_cost_monthly": "$50",
+        "apis_count": 12,
+        "reusability_score": 90,
+        "recommendation": "APIM gateway for AI services, high reuse potential"
+      },
+      {
+        "name": "project-name-apim",
+        "resource_group": "project-apim-rg",
+        "location": "canadaeast",
+        "sku": "Consumption",
+        "estimated_cost_monthly": "$0-20",
+        "apis_count": 3,
+        "reusability_score": 40,
+        "recommendation": "Project-specific, limited reuse"
+      }
+    ]
+  },
+  "document_intelligence_instances": {
+    "total_count": 5,
+    "instances": [
+      {
+        "name": "infoasst-docint-dev2",
+        "resource_group": "infoasst-dev2",
+        "location": "canadacentral",
+        "sku": "S0",
+        "reusability_score": 80,
+        "estimated_cost_monthly": "$30-50",
+        "recommendation": "Reusable for sandbox OCR workloads"
+      },
+      {
+        "name": "evachat-formrec-dev",
+        "resource_group": "evachat-dev-rg",
+        "location": "canadacentral",
+        "sku": "S0",
+        "reusability_score": 60,
+        "estimated_cost_monthly": "$20-40"
+      }
+    ]
+  },
+  "cognitive_search_instances": {
+    "total_count": 8,
+    "instances": [
+      {
+        "name": "infoasst-search-dev2",
+        "resource_group": "infoasst-dev2",
+        "location": "canadacentral",
+        "sku": "standard",
+        "reusability_score": 30,
+        "estimated_cost_monthly": "$250",
+        "recommendation": "Not recommended for reuse, deploy Basic tier for sandbox"
+      }
+    ]
+  },
+  "reusability_summary": {
+    "total_reusable_resources": 446,
+    "reusability_score_breakdown": {
+      "90-100 (Excellent)": 45,
+      "70-89 (Good)": 132,
+      "50-69 (Moderate)": 269,
+      "below_50 (Low)": 734
+    },
+    "top_reuse_categories": [
+      "Azure OpenAI instances",
+      "APIM gateways",
+      "Document Intelligence",
+      "Monitoring (App Insights, Log Analytics)",
+      "Key Vaults"
+    ]
+  },
+  "finops_opportunities": {
+    "total_opportunities": 437,
+    "categories": {
+      "unused_resources": 67,
+      "oversized_instances": 142,
+      "underutilized_resources": 98,
+      "consolidation_candidates": 130
+    },
+    "estimated_monthly_savings": "$15000-25000"
+  },
+  "apim_readiness": {
+    "total_api_exposed_resources": 132,
+    "resource_types": [
+      "Azure OpenAI (5)",
+      "Azure AI Services (12)",
+      "Azure Functions (45)",
+      "Web Apps with REST APIs (38)",
+      "Logic Apps (18)",
+      "Event Grids (14)"
+    ],
+    "recommendation": "132 resources ready for APIM integration"
+  },
+  "validation_metadata": {
+    "script_version": "Get-AzureInventory-Enhanced.ps1 v3.0.0",
+    "execution_time_seconds": 55,
+    "success_rate": "100%",
+    "errors": 0,
+    "warnings": 12,
+    "evidence_file": "azure-inventory-EsDAICoESub-20260203-080221.json",
+    "evidence_size_mb": 4.41,
+    "validation_report": "VALIDATION-COMPLETE-20260203.md"
+  }
+}

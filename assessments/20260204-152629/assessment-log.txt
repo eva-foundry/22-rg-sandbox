@@ -1,0 +1,87 @@
+[2026-02-04 15:26:29] [INFO] ========================================
+[2026-02-04 15:26:29] [INFO] Storage Assessment Script v2.0
+[2026-02-04 15:26:29] [INFO] ========================================
+[2026-02-04 15:26:29] [INFO] Subscription: d2d4e571-e0f2-4f6c-901a-f88f7669bcba
+[2026-02-04 15:26:29] [INFO] Resource Group: EsDAICoE-Sandbox
+[2026-02-04 15:26:29] [INFO] Output Directory: .\assessments\20260204-152629
+[2026-02-04 15:26:29] [INFO] 
+[2026-02-04 15:26:29] [INFO] Checking prerequisites...
+[2026-02-04 15:26:30] [SUCCESS] Azure CLI version: 2.81.0
+[2026-02-04 15:26:32] [SUCCESS] Logged in as: marco.presta@hrsdc-rhdcc.gc.ca
+[2026-02-04 15:26:34] [SUCCESS] Subscription access verified: EsDAICoESub
+[2026-02-04 15:26:42] [SUCCESS] Resource group found: EsDAICoE-Sandbox in canadacentral
+[2026-02-04 15:26:42] [INFO] 
+[2026-02-04 15:26:42] [INFO] Setting Azure subscription context...
+[2026-02-04 15:26:42] [DEBUG] Executing: az account set --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba
+[2026-02-04 15:26:43] [SUCCESS] Subscription context set successfully
+[2026-02-04 15:26:43] [INFO] 
+[2026-02-04 15:26:43] [INFO] Listing storage accounts in EsDAICoE-Sandbox...
+[2026-02-04 15:26:43] [DEBUG] Executing: az storage account list --resource-group EsDAICoE-Sandbox --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 15:26:46] [SUCCESS] Found 6 storage account(s)
+[2026-02-04 15:26:46] [SUCCESS] Storage accounts list saved: .\assessments\20260204-152629\storage-accounts.json
+[2026-02-04 15:26:46] [INFO] 
+[2026-02-04 15:26:46] [INFO] [1/6] Assessing: esdaicoesandboxst
+[2026-02-04 15:26:46] [DEBUG] Executing: az storage account keys list --account-name esdaicoesandboxst --resource-group EsDAICoE-Sandbox --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 15:26:49] [DEBUG] Executing: az storage container list --account-name esdaicoesandboxst --account-key 'q4GR/g6im+zcziiqZIEqFIAltRQPjAx4sjIxvK8hyWQCU6zRl7diOdnkLLUEDz0Ohx4lEaEdgcDC+ASt1PeWcw==' --output json
+[2026-02-04 15:26:52] [WARN] Attempt 1 failed: Command failed with exit code 1. Retrying in 5 seconds...
+[2026-02-04 15:26:57] [DEBUG] Executing: az storage container list --account-name esdaicoesandboxst --account-key 'q4GR/g6im+zcziiqZIEqFIAltRQPjAx4sjIxvK8hyWQCU6zRl7diOdnkLLUEDz0Ohx4lEaEdgcDC+ASt1PeWcw==' --output json
+[2026-02-04 15:26:59] [WARN] Attempt 2 failed: Command failed with exit code 1. Retrying in 5 seconds...
+[2026-02-04 15:27:04] [DEBUG] Executing: az storage container list --account-name esdaicoesandboxst --account-key 'q4GR/g6im+zcziiqZIEqFIAltRQPjAx4sjIxvK8hyWQCU6zRl7diOdnkLLUEDz0Ohx4lEaEdgcDC+ASt1PeWcw==' --output json
+[2026-02-04 15:27:08] [ERROR] All 3 attempts failed: Command failed with exit code 1
+[2026-02-04 15:27:08] [INFO] 
+[2026-02-04 15:27:08] [INFO] [2/6] Assessing: eqvispocaistorage
+[2026-02-04 15:27:09] [DEBUG] Executing: az storage account keys list --account-name eqvispocaistorage --resource-group EsDAICoE-Sandbox --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 15:27:12] [DEBUG] Executing: az storage container list --account-name eqvispocaistorage --account-key 'gDnCkxYF+ZId5k02vKAu8iXmdIVV76TcgGHkiMDhTNNC8P728GWFVOvW6cK3oZTR8s00miABfmoh+AStqspOOA==' --output json
+[2026-02-04 15:27:14] [INFO] Found 2 container(s)
+[2026-02-04 15:27:14] [DEBUG]   Assessing container: 0f471f3c-32de-4d74-8684-79f3a9a2469f-azureml
+[2026-02-04 15:27:14] [DEBUG] Executing: az storage blob list --container-name '0f471f3c-32de-4d74-8684-79f3a9a2469f-azureml' --account-name eqvispocaistorage --account-key 'gDnCkxYF+ZId5k02vKAu8iXmdIVV76TcgGHkiMDhTNNC8P728GWFVOvW6cK3oZTR8s00miABfmoh+AStqspOOA==' --output json
+[2026-02-04 15:27:17] [INFO] 
+[2026-02-04 15:27:17] [INFO] [3/6] Assessing: eqvispocdata
+[2026-02-04 15:27:17] [DEBUG] Executing: az storage account keys list --account-name eqvispocdata --resource-group EsDAICoE-Sandbox --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 15:27:19] [DEBUG] Executing: az storage container list --account-name eqvispocdata --account-key '4wZw39W+iWBshdpVF/IzNj72lRA01VlkU+OX5T50O/3sWEga4pegWZ8j1OTqAT7ptQVhhsH/Ebg4+AStZmGPUg==' --output json
+[2026-02-04 15:27:22] [INFO] Found 4 container(s)
+[2026-02-04 15:27:22] [DEBUG]   Assessing container: fileupload-navigation
+[2026-02-04 15:27:22] [DEBUG] Executing: az storage blob list --container-name 'fileupload-navigation' --account-name eqvispocdata --account-key '4wZw39W+iWBshdpVF/IzNj72lRA01VlkU+OX5T50O/3sWEga4pegWZ8j1OTqAT7ptQVhhsH/Ebg4+AStZmGPUg==' --output json
+[2026-02-04 15:27:25] [INFO] 
+[2026-02-04 15:27:25] [INFO] [4/6] Assessing: eqvispocfuncstorage
+[2026-02-04 15:27:25] [DEBUG] Executing: az storage account keys list --account-name eqvispocfuncstorage --resource-group EsDAICoE-Sandbox --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 15:27:27] [DEBUG] Executing: az storage container list --account-name eqvispocfuncstorage --account-key 'mLkSjiGTn5ei2wK38vJJU0u5x5nPFBa7GeDsVIKbwed+Fa4kdkPkIXAd0xLDvanR1V+YMQyhGXPT+ASt30Pldw==' --output json
+[2026-02-04 15:27:30] [INFO] Found 2 container(s)
+[2026-02-04 15:27:30] [DEBUG]   Assessing container: azure-webjobs-hosts
+[2026-02-04 15:27:30] [DEBUG] Executing: az storage blob list --container-name 'azure-webjobs-hosts' --account-name eqvispocfuncstorage --account-key 'mLkSjiGTn5ei2wK38vJJU0u5x5nPFBa7GeDsVIKbwed+Fa4kdkPkIXAd0xLDvanR1V+YMQyhGXPT+ASt30Pldw==' --output json
+[2026-02-04 15:27:33] [INFO] 
+[2026-02-04 15:27:33] [INFO] [5/6] Assessing: marcosand20260203
+[2026-02-04 15:27:33] [DEBUG] Executing: az storage account keys list --account-name marcosand20260203 --resource-group EsDAICoE-Sandbox --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 15:27:37] [DEBUG] Executing: az storage container list --account-name marcosand20260203 --account-key 'RmrCPZid4Oqjqm7sgo6r94glk22VscqF+//khqPbKtSBKIgkLTuqfg8eFIAwtIqdCUbOVB5VIqjq+AStrrDQqg==' --output json
+[2026-02-04 15:27:39] [INFO] Found 6 container(s)
+[2026-02-04 15:27:39] [DEBUG]   Assessing container: config
+[2026-02-04 15:27:39] [DEBUG] Executing: az storage blob list --container-name 'config' --account-name marcosand20260203 --account-key 'RmrCPZid4Oqjqm7sgo6r94glk22VscqF+//khqPbKtSBKIgkLTuqfg8eFIAwtIqdCUbOVB5VIqjq+AStrrDQqg==' --output json
+[2026-02-04 15:27:41] [INFO] 
+[2026-02-04 15:27:41] [INFO] [6/6] Assessing: marcosandboxfinopshub
+[2026-02-04 15:27:41] [DEBUG] Executing: az storage account keys list --account-name marcosandboxfinopshub --resource-group EsDAICoE-Sandbox --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 15:27:44] [DEBUG] Executing: az storage container list --account-name marcosandboxfinopshub --account-key 'k2ZlS4Kxc69v3co/CyUVfkYbAI1G4FxLZD/rzioTdawj5LOjcQs7zGTugIttL/GhCotLMnHFHcXA+AStFYnuUg==' --output json
+[2026-02-04 15:27:47] [INFO] Found 1 container(s)
+[2026-02-04 15:27:47] [DEBUG]   Assessing container: costs
+[2026-02-04 15:27:47] [DEBUG] Executing: az storage blob list --container-name 'costs' --account-name marcosandboxfinopshub --account-key 'k2ZlS4Kxc69v3co/CyUVfkYbAI1G4FxLZD/rzioTdawj5LOjcQs7zGTugIttL/GhCotLMnHFHcXA+AStFYnuUg==' --output json
+[2026-02-04 15:27:49] [INFO] 
+[2026-02-04 15:27:49] [SUCCESS] Complete assessment saved: .\assessments\20260204-152629\storage-assessment.json
+[2026-02-04 15:27:49] [INFO] 
+[2026-02-04 15:27:49] [INFO] Generating summary report...
+[2026-02-04 15:27:50] [SUCCESS] Summary report saved: .\assessments\20260204-152629\STORAGE-ASSESSMENT-SUMMARY.md
+[2026-02-04 15:27:50] [INFO] 
+[2026-02-04 15:27:50] [INFO] ========================================
+[2026-02-04 15:27:50] [SUCCESS] ASSESSMENT COMPLETE
+[2026-02-04 15:27:50] [INFO] ========================================
+[2026-02-04 15:27:50] [INFO] 
+[2026-02-04 15:27:50] [INFO]  :  containers,  blobs,  GB
+[2026-02-04 15:27:50] [INFO]  :  containers,  blobs,  GB
+[2026-02-04 15:27:50] [INFO]  :  containers,  blobs,  GB
+[2026-02-04 15:27:50] [INFO]  :  containers,  blobs,  GB
+[2026-02-04 15:27:50] [INFO]  :  containers,  blobs,  GB
+[2026-02-04 15:27:50] [INFO]  :  containers,  blobs,  GB
+[2026-02-04 15:27:50] [INFO] 
+[2026-02-04 15:27:50] [INFO] Output Directory: .\assessments\20260204-152629
+[2026-02-04 15:27:50] [INFO] Summary Report: .\assessments\20260204-152629\STORAGE-ASSESSMENT-SUMMARY.md
+[2026-02-04 15:27:50] [INFO] 
+[2026-02-04 15:27:50] [INFO] [NEXT] Review the summary report and complete the copy plan
+[2026-02-04 15:27:50] [INFO] ========================================

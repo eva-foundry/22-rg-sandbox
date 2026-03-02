@@ -1,0 +1,128 @@
+[
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-search",
+    "SKU": "basic",
+    "State": null,
+    "Type": "Microsoft.Search/searchServices"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-cosmos",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.DocumentDB/databaseAccounts"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-asp-backend",
+    "SKU": "B1",
+    "State": null,
+    "Type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-asp-enrichment",
+    "SKU": "B1",
+    "State": null,
+    "Type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-backend",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.Web/sites"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-enrichment",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.Web/sites"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marcosandkv20260203",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.KeyVault/vaults"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marcosand20260203",
+    "SKU": "Standard_LRS",
+    "State": null,
+    "Type": "Microsoft.Storage/storageAccounts"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marcosandacr20260203",
+    "SKU": "Basic",
+    "State": null,
+    "Type": "Microsoft.ContainerRegistry/registries"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-asp-func",
+    "SKU": "B1",
+    "State": null,
+    "Type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-func",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.Web/sites"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-func",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.Insights/components"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-apim",
+    "SKU": "Developer",
+    "State": null,
+    "Type": "Microsoft.ApiManagement/service"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marcosandboxfinopshub",
+    "SKU": "Standard_LRS",
+    "State": null,
+    "Type": "Microsoft.Storage/storageAccounts"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marcosand20260203-eb072872-8e2e-42e3-9617-f4a1247bbb63",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.EventGrid/systemTopics"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marcosandboxfinopshub-52dd1c15-63a9-48a2-842e-97bda61d811f",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.EventGrid/systemTopics"
+  },
+  {
+    "Location": "canadaeast",
+    "Name": "marco-sandbox-openai",
+    "SKU": "S0",
+    "State": null,
+    "Type": "Microsoft.CognitiveServices/accounts"
+  },
+  {
+    "Location": "canadacentral",
+    "Name": "marco-sandbox-finops-adf",
+    "SKU": null,
+    "State": null,
+    "Type": "Microsoft.DataFactory/factories"
+  }
+]

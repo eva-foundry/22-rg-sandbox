@@ -1,0 +1,372 @@
+[2026-02-04 16:31:18] [INFO] ========================================
+[2026-02-04 16:31:18] [INFO] Storage Assessment Script v2.0
+[2026-02-04 16:31:19] [INFO] ========================================
+[2026-02-04 16:31:19] [INFO] Subscription: d2d4e571-e0f2-4f6c-901a-f88f7669bcba
+[2026-02-04 16:31:19] [INFO] Resource Group: infoasst-dev2
+[2026-02-04 16:31:19] [INFO] Output Directory: .\assessments\dev2-source\20260204-163118
+[2026-02-04 16:31:19] [INFO] 
+[2026-02-04 16:31:19] [INFO] Checking prerequisites...
+[2026-02-04 16:31:19] [SUCCESS] Azure CLI version: 2.81.0
+[2026-02-04 16:31:21] [SUCCESS] Logged in as: marco.presta@hrsdc-rhdcc.gc.ca
+[2026-02-04 16:31:24] [SUCCESS] Subscription access verified: EsDAICoESub
+[2026-02-04 16:31:27] [SUCCESS] Resource group found: infoasst-dev2 in canadacentral
+[2026-02-04 16:31:27] [INFO] 
+[2026-02-04 16:31:27] [INFO] Setting Azure subscription context...
+[2026-02-04 16:31:27] [DEBUG] Executing: az account set --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba
+[2026-02-04 16:31:30] [SUCCESS] Subscription context set successfully
+[2026-02-04 16:31:30] [INFO] 
+[2026-02-04 16:31:30] [INFO] Listing storage accounts in infoasst-dev2...
+[2026-02-04 16:31:30] [DEBUG] Executing: az storage account list --resource-group infoasst-dev2 --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 16:31:34] [SUCCESS] Found 1 storage account(s)
+[2026-02-04 16:31:34] [SUCCESS] Storage accounts list saved: .\assessments\dev2-source\20260204-163118\storage-accounts.json
+[2026-02-04 16:31:34] [INFO] 
+[2026-02-04 16:31:34] [INFO] [1/1] Assessing: infoasststoredev2
+[2026-02-04 16:31:34] [INFO] Checking permissions for: infoasststoredev2
+[2026-02-04 16:31:44] [WARN] Limited permissions: May not be able to list blobs
+[2026-02-04 16:31:44] [DEBUG] Executing: az storage account keys list --account-name infoasststoredev2 --resource-group infoasst-dev2 --subscription d2d4e571-e0f2-4f6c-901a-f88f7669bcba --output json
+[2026-02-04 16:31:46] [DEBUG] Executing: az storage container list --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:31:48] [INFO] Found 109 container(s)
+[2026-02-04 16:31:48] [DEBUG]   Assessing container: azure-webjobs-hosts
+[2026-02-04 16:31:48] [DEBUG] Executing: az storage blob list --container-name 'azure-webjobs-hosts' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:31:53] [SUCCESS]   Container azure-webjobs-hosts: 7 blobs, 0 GB
+[2026-02-04 16:31:53] [DEBUG]   Assessing container: azure-webjobs-secrets
+[2026-02-04 16:31:53] [DEBUG] Executing: az storage blob list --container-name 'azure-webjobs-secrets' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:31:55] [SUCCESS]   Container azure-webjobs-secrets: 1 blobs, 0 GB
+[2026-02-04 16:31:55] [DEBUG]   Assessing container: bdm-landing
+[2026-02-04 16:31:55] [DEBUG] Executing: az storage blob list --container-name 'bdm-landing' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:09] [SUCCESS]   Container bdm-landing: 5000 blobs, 0.709 GB
+[2026-02-04 16:32:09] [DEBUG]   Assessing container: config
+[2026-02-04 16:32:09] [DEBUG] Executing: az storage blob list --container-name 'config' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:11] [SUCCESS]   Container config: 3 blobs, 0 GB
+[2026-02-04 16:32:11] [DEBUG]   Assessing container: content
+[2026-02-04 16:32:11] [DEBUG] Executing: az storage blob list --container-name 'content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:14] [SUCCESS]   Container content: 0 blobs, 0 GB
+[2026-02-04 16:32:14] [DEBUG]   Assessing container: function
+[2026-02-04 16:32:14] [DEBUG] Executing: az storage blob list --container-name 'function' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:17] [SUCCESS]   Container function: 0 blobs, 0 GB
+[2026-02-04 16:32:17] [DEBUG]   Assessing container: logs
+[2026-02-04 16:32:17] [DEBUG] Executing: az storage blob list --container-name 'logs' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:22] [SUCCESS]   Container logs: 0 blobs, 0 GB
+[2026-02-04 16:32:22] [DEBUG]   Assessing container: proj1-content
+[2026-02-04 16:32:22] [DEBUG] Executing: az storage blob list --container-name 'proj1-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:29] [SUCCESS]   Container proj1-content: 1593 blobs, 0.11 GB
+[2026-02-04 16:32:29] [DEBUG]   Assessing container: proj1-upload
+[2026-02-04 16:32:29] [DEBUG] Executing: az storage blob list --container-name 'proj1-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:31] [SUCCESS]   Container proj1-upload: 3 blobs, 0.006 GB
+[2026-02-04 16:32:31] [DEBUG]   Assessing container: proj10-content
+[2026-02-04 16:32:31] [DEBUG] Executing: az storage blob list --container-name 'proj10-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:35] [SUCCESS]   Container proj10-content: 0 blobs, 0 GB
+[2026-02-04 16:32:35] [DEBUG]   Assessing container: proj10-upload
+[2026-02-04 16:32:35] [DEBUG] Executing: az storage blob list --container-name 'proj10-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:37] [SUCCESS]   Container proj10-upload: 0 blobs, 0 GB
+[2026-02-04 16:32:37] [DEBUG]   Assessing container: proj11-content
+[2026-02-04 16:32:37] [DEBUG] Executing: az storage blob list --container-name 'proj11-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:42] [SUCCESS]   Container proj11-content: 0 blobs, 0 GB
+[2026-02-04 16:32:42] [DEBUG]   Assessing container: proj11-upload
+[2026-02-04 16:32:42] [DEBUG] Executing: az storage blob list --container-name 'proj11-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:47] [SUCCESS]   Container proj11-upload: 0 blobs, 0 GB
+[2026-02-04 16:32:47] [DEBUG]   Assessing container: proj12-content
+[2026-02-04 16:32:47] [DEBUG] Executing: az storage blob list --container-name 'proj12-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:50] [SUCCESS]   Container proj12-content: 0 blobs, 0 GB
+[2026-02-04 16:32:50] [DEBUG]   Assessing container: proj12-upload
+[2026-02-04 16:32:50] [DEBUG] Executing: az storage blob list --container-name 'proj12-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:52] [SUCCESS]   Container proj12-upload: 0 blobs, 0 GB
+[2026-02-04 16:32:52] [DEBUG]   Assessing container: proj13-content
+[2026-02-04 16:32:52] [DEBUG] Executing: az storage blob list --container-name 'proj13-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:32:58] [SUCCESS]   Container proj13-content: 0 blobs, 0 GB
+[2026-02-04 16:32:58] [DEBUG]   Assessing container: proj13-upload
+[2026-02-04 16:32:58] [DEBUG] Executing: az storage blob list --container-name 'proj13-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:00] [SUCCESS]   Container proj13-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:00] [DEBUG]   Assessing container: proj14-content
+[2026-02-04 16:33:00] [DEBUG] Executing: az storage blob list --container-name 'proj14-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:02] [SUCCESS]   Container proj14-content: 0 blobs, 0 GB
+[2026-02-04 16:33:02] [DEBUG]   Assessing container: proj14-upload
+[2026-02-04 16:33:02] [DEBUG] Executing: az storage blob list --container-name 'proj14-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:04] [SUCCESS]   Container proj14-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:04] [DEBUG]   Assessing container: proj15-content
+[2026-02-04 16:33:04] [DEBUG] Executing: az storage blob list --container-name 'proj15-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:07] [SUCCESS]   Container proj15-content: 0 blobs, 0 GB
+[2026-02-04 16:33:07] [DEBUG]   Assessing container: proj15-upload
+[2026-02-04 16:33:07] [DEBUG] Executing: az storage blob list --container-name 'proj15-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:09] [SUCCESS]   Container proj15-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:09] [DEBUG]   Assessing container: proj16-content
+[2026-02-04 16:33:09] [DEBUG] Executing: az storage blob list --container-name 'proj16-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:11] [SUCCESS]   Container proj16-content: 0 blobs, 0 GB
+[2026-02-04 16:33:11] [DEBUG]   Assessing container: proj16-upload
+[2026-02-04 16:33:11] [DEBUG] Executing: az storage blob list --container-name 'proj16-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:14] [SUCCESS]   Container proj16-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:14] [DEBUG]   Assessing container: proj17-content
+[2026-02-04 16:33:14] [DEBUG] Executing: az storage blob list --container-name 'proj17-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:18] [SUCCESS]   Container proj17-content: 0 blobs, 0 GB
+[2026-02-04 16:33:18] [DEBUG]   Assessing container: proj17-upload
+[2026-02-04 16:33:18] [DEBUG] Executing: az storage blob list --container-name 'proj17-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:20] [SUCCESS]   Container proj17-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:20] [DEBUG]   Assessing container: proj18-content
+[2026-02-04 16:33:20] [DEBUG] Executing: az storage blob list --container-name 'proj18-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:23] [SUCCESS]   Container proj18-content: 0 blobs, 0 GB
+[2026-02-04 16:33:23] [DEBUG]   Assessing container: proj18-upload
+[2026-02-04 16:33:23] [DEBUG] Executing: az storage blob list --container-name 'proj18-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:27] [SUCCESS]   Container proj18-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:27] [DEBUG]   Assessing container: proj19-content
+[2026-02-04 16:33:27] [DEBUG] Executing: az storage blob list --container-name 'proj19-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:30] [SUCCESS]   Container proj19-content: 0 blobs, 0 GB
+[2026-02-04 16:33:30] [DEBUG]   Assessing container: proj19-upload
+[2026-02-04 16:33:30] [DEBUG] Executing: az storage blob list --container-name 'proj19-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:33] [SUCCESS]   Container proj19-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:34] [DEBUG]   Assessing container: proj2-content
+[2026-02-04 16:33:34] [DEBUG] Executing: az storage blob list --container-name 'proj2-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:38] [SUCCESS]   Container proj2-content: 0 blobs, 0 GB
+[2026-02-04 16:33:38] [DEBUG]   Assessing container: proj2-upload
+[2026-02-04 16:33:38] [DEBUG] Executing: az storage blob list --container-name 'proj2-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:47] [SUCCESS]   Container proj2-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:47] [DEBUG]   Assessing container: proj20-content
+[2026-02-04 16:33:47] [DEBUG] Executing: az storage blob list --container-name 'proj20-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:50] [SUCCESS]   Container proj20-content: 0 blobs, 0 GB
+[2026-02-04 16:33:50] [DEBUG]   Assessing container: proj20-upload
+[2026-02-04 16:33:50] [DEBUG] Executing: az storage blob list --container-name 'proj20-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:53] [SUCCESS]   Container proj20-upload: 0 blobs, 0 GB
+[2026-02-04 16:33:53] [DEBUG]   Assessing container: proj21-content
+[2026-02-04 16:33:53] [DEBUG] Executing: az storage blob list --container-name 'proj21-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:33:56] [SUCCESS]   Container proj21-content: 0 blobs, 0 GB
+[2026-02-04 16:33:56] [DEBUG]   Assessing container: proj21-upload
+[2026-02-04 16:33:56] [DEBUG] Executing: az storage blob list --container-name 'proj21-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:01] [SUCCESS]   Container proj21-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:01] [DEBUG]   Assessing container: proj22-content
+[2026-02-04 16:34:01] [DEBUG] Executing: az storage blob list --container-name 'proj22-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:04] [SUCCESS]   Container proj22-content: 0 blobs, 0 GB
+[2026-02-04 16:34:04] [DEBUG]   Assessing container: proj22-upload
+[2026-02-04 16:34:04] [DEBUG] Executing: az storage blob list --container-name 'proj22-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:06] [SUCCESS]   Container proj22-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:06] [DEBUG]   Assessing container: proj23-content
+[2026-02-04 16:34:06] [DEBUG] Executing: az storage blob list --container-name 'proj23-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:09] [SUCCESS]   Container proj23-content: 0 blobs, 0 GB
+[2026-02-04 16:34:09] [DEBUG]   Assessing container: proj23-upload
+[2026-02-04 16:34:09] [DEBUG] Executing: az storage blob list --container-name 'proj23-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:11] [SUCCESS]   Container proj23-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:11] [DEBUG]   Assessing container: proj24-content
+[2026-02-04 16:34:11] [DEBUG] Executing: az storage blob list --container-name 'proj24-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:14] [SUCCESS]   Container proj24-content: 0 blobs, 0 GB
+[2026-02-04 16:34:14] [DEBUG]   Assessing container: proj24-upload
+[2026-02-04 16:34:14] [DEBUG] Executing: az storage blob list --container-name 'proj24-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:16] [SUCCESS]   Container proj24-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:16] [DEBUG]   Assessing container: proj25-content
+[2026-02-04 16:34:17] [DEBUG] Executing: az storage blob list --container-name 'proj25-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:22] [SUCCESS]   Container proj25-content: 0 blobs, 0 GB
+[2026-02-04 16:34:22] [DEBUG]   Assessing container: proj25-upload
+[2026-02-04 16:34:22] [DEBUG] Executing: az storage blob list --container-name 'proj25-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:28] [SUCCESS]   Container proj25-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:28] [DEBUG]   Assessing container: proj26-content
+[2026-02-04 16:34:28] [DEBUG] Executing: az storage blob list --container-name 'proj26-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:30] [SUCCESS]   Container proj26-content: 0 blobs, 0 GB
+[2026-02-04 16:34:30] [DEBUG]   Assessing container: proj26-upload
+[2026-02-04 16:34:30] [DEBUG] Executing: az storage blob list --container-name 'proj26-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:32] [SUCCESS]   Container proj26-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:32] [DEBUG]   Assessing container: proj27-content
+[2026-02-04 16:34:32] [DEBUG] Executing: az storage blob list --container-name 'proj27-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:36] [SUCCESS]   Container proj27-content: 0 blobs, 0 GB
+[2026-02-04 16:34:36] [DEBUG]   Assessing container: proj27-upload
+[2026-02-04 16:34:36] [DEBUG] Executing: az storage blob list --container-name 'proj27-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:38] [SUCCESS]   Container proj27-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:38] [DEBUG]   Assessing container: proj28-content
+[2026-02-04 16:34:38] [DEBUG] Executing: az storage blob list --container-name 'proj28-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:45] [SUCCESS]   Container proj28-content: 0 blobs, 0 GB
+[2026-02-04 16:34:45] [DEBUG]   Assessing container: proj28-upload
+[2026-02-04 16:34:45] [DEBUG] Executing: az storage blob list --container-name 'proj28-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:47] [SUCCESS]   Container proj28-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:47] [DEBUG]   Assessing container: proj29-content
+[2026-02-04 16:34:47] [DEBUG] Executing: az storage blob list --container-name 'proj29-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:51] [SUCCESS]   Container proj29-content: 0 blobs, 0 GB
+[2026-02-04 16:34:51] [DEBUG]   Assessing container: proj29-upload
+[2026-02-04 16:34:51] [DEBUG] Executing: az storage blob list --container-name 'proj29-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:54] [SUCCESS]   Container proj29-upload: 0 blobs, 0 GB
+[2026-02-04 16:34:54] [DEBUG]   Assessing container: proj3-content
+[2026-02-04 16:34:54] [DEBUG] Executing: az storage blob list --container-name 'proj3-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:34:57] [SUCCESS]   Container proj3-content: 0 blobs, 0 GB
+[2026-02-04 16:34:57] [DEBUG]   Assessing container: proj3-upload
+[2026-02-04 16:34:57] [DEBUG] Executing: az storage blob list --container-name 'proj3-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:02] [SUCCESS]   Container proj3-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:02] [DEBUG]   Assessing container: proj30-content
+[2026-02-04 16:35:02] [DEBUG] Executing: az storage blob list --container-name 'proj30-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:04] [SUCCESS]   Container proj30-content: 0 blobs, 0 GB
+[2026-02-04 16:35:04] [DEBUG]   Assessing container: proj30-upload
+[2026-02-04 16:35:04] [DEBUG] Executing: az storage blob list --container-name 'proj30-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:07] [SUCCESS]   Container proj30-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:07] [DEBUG]   Assessing container: proj31-content
+[2026-02-04 16:35:07] [DEBUG] Executing: az storage blob list --container-name 'proj31-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:11] [SUCCESS]   Container proj31-content: 0 blobs, 0 GB
+[2026-02-04 16:35:11] [DEBUG]   Assessing container: proj31-upload
+[2026-02-04 16:35:11] [DEBUG] Executing: az storage blob list --container-name 'proj31-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:16] [SUCCESS]   Container proj31-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:16] [DEBUG]   Assessing container: proj32-content
+[2026-02-04 16:35:16] [DEBUG] Executing: az storage blob list --container-name 'proj32-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:19] [SUCCESS]   Container proj32-content: 0 blobs, 0 GB
+[2026-02-04 16:35:19] [DEBUG]   Assessing container: proj32-upload
+[2026-02-04 16:35:19] [DEBUG] Executing: az storage blob list --container-name 'proj32-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:21] [SUCCESS]   Container proj32-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:21] [DEBUG]   Assessing container: proj33-content
+[2026-02-04 16:35:21] [DEBUG] Executing: az storage blob list --container-name 'proj33-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:24] [SUCCESS]   Container proj33-content: 0 blobs, 0 GB
+[2026-02-04 16:35:24] [DEBUG]   Assessing container: proj33-upload
+[2026-02-04 16:35:24] [DEBUG] Executing: az storage blob list --container-name 'proj33-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:26] [SUCCESS]   Container proj33-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:26] [DEBUG]   Assessing container: proj34-content
+[2026-02-04 16:35:26] [DEBUG] Executing: az storage blob list --container-name 'proj34-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:31] [SUCCESS]   Container proj34-content: 0 blobs, 0 GB
+[2026-02-04 16:35:31] [DEBUG]   Assessing container: proj34-upload
+[2026-02-04 16:35:32] [DEBUG] Executing: az storage blob list --container-name 'proj34-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:35] [SUCCESS]   Container proj34-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:35] [DEBUG]   Assessing container: proj35-content
+[2026-02-04 16:35:35] [DEBUG] Executing: az storage blob list --container-name 'proj35-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:37] [SUCCESS]   Container proj35-content: 0 blobs, 0 GB
+[2026-02-04 16:35:37] [DEBUG]   Assessing container: proj35-upload
+[2026-02-04 16:35:37] [DEBUG] Executing: az storage blob list --container-name 'proj35-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:40] [SUCCESS]   Container proj35-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:40] [DEBUG]   Assessing container: proj36-content
+[2026-02-04 16:35:40] [DEBUG] Executing: az storage blob list --container-name 'proj36-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:43] [SUCCESS]   Container proj36-content: 0 blobs, 0 GB
+[2026-02-04 16:35:43] [DEBUG]   Assessing container: proj36-upload
+[2026-02-04 16:35:43] [DEBUG] Executing: az storage blob list --container-name 'proj36-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:47] [SUCCESS]   Container proj36-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:47] [DEBUG]   Assessing container: proj37-content
+[2026-02-04 16:35:47] [DEBUG] Executing: az storage blob list --container-name 'proj37-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:49] [SUCCESS]   Container proj37-content: 0 blobs, 0 GB
+[2026-02-04 16:35:49] [DEBUG]   Assessing container: proj37-upload
+[2026-02-04 16:35:49] [DEBUG] Executing: az storage blob list --container-name 'proj37-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:35:52] [SUCCESS]   Container proj37-upload: 0 blobs, 0 GB
+[2026-02-04 16:35:52] [DEBUG]   Assessing container: proj38-content
+[2026-02-04 16:35:52] [DEBUG] Executing: az storage blob list --container-name 'proj38-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:00] [SUCCESS]   Container proj38-content: 0 blobs, 0 GB
+[2026-02-04 16:36:00] [DEBUG]   Assessing container: proj38-upload
+[2026-02-04 16:36:00] [DEBUG] Executing: az storage blob list --container-name 'proj38-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:03] [SUCCESS]   Container proj38-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:03] [DEBUG]   Assessing container: proj39-content
+[2026-02-04 16:36:03] [DEBUG] Executing: az storage blob list --container-name 'proj39-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:07] [SUCCESS]   Container proj39-content: 0 blobs, 0 GB
+[2026-02-04 16:36:08] [DEBUG]   Assessing container: proj39-upload
+[2026-02-04 16:36:08] [DEBUG] Executing: az storage blob list --container-name 'proj39-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:12] [SUCCESS]   Container proj39-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:12] [DEBUG]   Assessing container: proj4-content
+[2026-02-04 16:36:12] [DEBUG] Executing: az storage blob list --container-name 'proj4-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:17] [SUCCESS]   Container proj4-content: 0 blobs, 0 GB
+[2026-02-04 16:36:17] [DEBUG]   Assessing container: proj4-upload
+[2026-02-04 16:36:17] [DEBUG] Executing: az storage blob list --container-name 'proj4-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:19] [SUCCESS]   Container proj4-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:19] [DEBUG]   Assessing container: proj40-content
+[2026-02-04 16:36:19] [DEBUG] Executing: az storage blob list --container-name 'proj40-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:24] [SUCCESS]   Container proj40-content: 0 blobs, 0 GB
+[2026-02-04 16:36:24] [DEBUG]   Assessing container: proj40-upload
+[2026-02-04 16:36:24] [DEBUG] Executing: az storage blob list --container-name 'proj40-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:28] [SUCCESS]   Container proj40-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:28] [DEBUG]   Assessing container: proj41-content
+[2026-02-04 16:36:28] [DEBUG] Executing: az storage blob list --container-name 'proj41-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:32] [SUCCESS]   Container proj41-content: 0 blobs, 0 GB
+[2026-02-04 16:36:32] [DEBUG]   Assessing container: proj41-upload
+[2026-02-04 16:36:32] [DEBUG] Executing: az storage blob list --container-name 'proj41-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:35] [SUCCESS]   Container proj41-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:35] [DEBUG]   Assessing container: proj42-content
+[2026-02-04 16:36:35] [DEBUG] Executing: az storage blob list --container-name 'proj42-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:40] [SUCCESS]   Container proj42-content: 0 blobs, 0 GB
+[2026-02-04 16:36:40] [DEBUG]   Assessing container: proj42-upload
+[2026-02-04 16:36:40] [DEBUG] Executing: az storage blob list --container-name 'proj42-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:44] [SUCCESS]   Container proj42-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:44] [DEBUG]   Assessing container: proj43-content
+[2026-02-04 16:36:44] [DEBUG] Executing: az storage blob list --container-name 'proj43-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:46] [SUCCESS]   Container proj43-content: 0 blobs, 0 GB
+[2026-02-04 16:36:46] [DEBUG]   Assessing container: proj43-upload
+[2026-02-04 16:36:46] [DEBUG] Executing: az storage blob list --container-name 'proj43-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:50] [SUCCESS]   Container proj43-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:50] [DEBUG]   Assessing container: proj44-content
+[2026-02-04 16:36:50] [DEBUG] Executing: az storage blob list --container-name 'proj44-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:53] [SUCCESS]   Container proj44-content: 0 blobs, 0 GB
+[2026-02-04 16:36:53] [DEBUG]   Assessing container: proj44-upload
+[2026-02-04 16:36:53] [DEBUG] Executing: az storage blob list --container-name 'proj44-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:56] [SUCCESS]   Container proj44-upload: 0 blobs, 0 GB
+[2026-02-04 16:36:56] [DEBUG]   Assessing container: proj45-content
+[2026-02-04 16:36:56] [DEBUG] Executing: az storage blob list --container-name 'proj45-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:36:59] [SUCCESS]   Container proj45-content: 0 blobs, 0 GB
+[2026-02-04 16:36:59] [DEBUG]   Assessing container: proj45-upload
+[2026-02-04 16:36:59] [DEBUG] Executing: az storage blob list --container-name 'proj45-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:02] [SUCCESS]   Container proj45-upload: 0 blobs, 0 GB
+[2026-02-04 16:37:02] [DEBUG]   Assessing container: proj46-content
+[2026-02-04 16:37:02] [DEBUG] Executing: az storage blob list --container-name 'proj46-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:05] [SUCCESS]   Container proj46-content: 0 blobs, 0 GB
+[2026-02-04 16:37:05] [DEBUG]   Assessing container: proj46-upload
+[2026-02-04 16:37:05] [DEBUG] Executing: az storage blob list --container-name 'proj46-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:07] [SUCCESS]   Container proj46-upload: 0 blobs, 0 GB
+[2026-02-04 16:37:07] [DEBUG]   Assessing container: proj47-content
+[2026-02-04 16:37:07] [DEBUG] Executing: az storage blob list --container-name 'proj47-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:10] [SUCCESS]   Container proj47-content: 0 blobs, 0 GB
+[2026-02-04 16:37:10] [DEBUG]   Assessing container: proj47-upload
+[2026-02-04 16:37:10] [DEBUG] Executing: az storage blob list --container-name 'proj47-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:12] [SUCCESS]   Container proj47-upload: 0 blobs, 0 GB
+[2026-02-04 16:37:12] [DEBUG]   Assessing container: proj48-content
+[2026-02-04 16:37:12] [DEBUG] Executing: az storage blob list --container-name 'proj48-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:14] [SUCCESS]   Container proj48-content: 0 blobs, 0 GB
+[2026-02-04 16:37:14] [DEBUG]   Assessing container: proj48-upload
+[2026-02-04 16:37:14] [DEBUG] Executing: az storage blob list --container-name 'proj48-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:17] [SUCCESS]   Container proj48-upload: 0 blobs, 0 GB
+[2026-02-04 16:37:17] [DEBUG]   Assessing container: proj49-content
+[2026-02-04 16:37:17] [DEBUG] Executing: az storage blob list --container-name 'proj49-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:31] [SUCCESS]   Container proj49-content: 5000 blobs, 0.347 GB
+[2026-02-04 16:37:31] [DEBUG]   Assessing container: proj49-upload
+[2026-02-04 16:37:31] [DEBUG] Executing: az storage blob list --container-name 'proj49-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:48] [SUCCESS]   Container proj49-upload: 7337 blobs, 1.088 GB
+[2026-02-04 16:37:48] [DEBUG]   Assessing container: proj5-content
+[2026-02-04 16:37:48] [DEBUG] Executing: az storage blob list --container-name 'proj5-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:50] [SUCCESS]   Container proj5-content: 0 blobs, 0 GB
+[2026-02-04 16:37:50] [DEBUG]   Assessing container: proj5-upload
+[2026-02-04 16:37:50] [DEBUG] Executing: az storage blob list --container-name 'proj5-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:52] [SUCCESS]   Container proj5-upload: 0 blobs, 0 GB
+[2026-02-04 16:37:52] [DEBUG]   Assessing container: proj50-content
+[2026-02-04 16:37:52] [DEBUG] Executing: az storage blob list --container-name 'proj50-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:54] [SUCCESS]   Container proj50-content: 0 blobs, 0 GB
+[2026-02-04 16:37:54] [DEBUG]   Assessing container: proj50-upload
+[2026-02-04 16:37:54] [DEBUG] Executing: az storage blob list --container-name 'proj50-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:37:57] [SUCCESS]   Container proj50-upload: 0 blobs, 0 GB
+[2026-02-04 16:37:57] [DEBUG]   Assessing container: proj6-content
+[2026-02-04 16:37:57] [DEBUG] Executing: az storage blob list --container-name 'proj6-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:00] [SUCCESS]   Container proj6-content: 0 blobs, 0 GB
+[2026-02-04 16:38:00] [DEBUG]   Assessing container: proj6-upload
+[2026-02-04 16:38:00] [DEBUG] Executing: az storage blob list --container-name 'proj6-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:02] [SUCCESS]   Container proj6-upload: 0 blobs, 0 GB
+[2026-02-04 16:38:02] [DEBUG]   Assessing container: proj7-content
+[2026-02-04 16:38:02] [DEBUG] Executing: az storage blob list --container-name 'proj7-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:04] [SUCCESS]   Container proj7-content: 0 blobs, 0 GB
+[2026-02-04 16:38:04] [DEBUG]   Assessing container: proj7-upload
+[2026-02-04 16:38:04] [DEBUG] Executing: az storage blob list --container-name 'proj7-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:11] [SUCCESS]   Container proj7-upload: 0 blobs, 0 GB
+[2026-02-04 16:38:11] [DEBUG]   Assessing container: proj8-content
+[2026-02-04 16:38:12] [DEBUG] Executing: az storage blob list --container-name 'proj8-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:14] [SUCCESS]   Container proj8-content: 0 blobs, 0 GB
+[2026-02-04 16:38:14] [DEBUG]   Assessing container: proj8-upload
+[2026-02-04 16:38:14] [DEBUG] Executing: az storage blob list --container-name 'proj8-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:16] [SUCCESS]   Container proj8-upload: 0 blobs, 0 GB
+[2026-02-04 16:38:16] [DEBUG]   Assessing container: proj9-content
+[2026-02-04 16:38:16] [DEBUG] Executing: az storage blob list --container-name 'proj9-content' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:19] [SUCCESS]   Container proj9-content: 0 blobs, 0 GB
+[2026-02-04 16:38:19] [DEBUG]   Assessing container: proj9-upload
+[2026-02-04 16:38:19] [DEBUG] Executing: az storage blob list --container-name 'proj9-upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:21] [SUCCESS]   Container proj9-upload: 0 blobs, 0 GB
+[2026-02-04 16:38:21] [DEBUG]   Assessing container: upload
+[2026-02-04 16:38:21] [DEBUG] Executing: az storage blob list --container-name 'upload' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:25] [SUCCESS]   Container upload: 0 blobs, 0 GB
+[2026-02-04 16:38:25] [DEBUG]   Assessing container: website
+[2026-02-04 16:38:25] [DEBUG] Executing: az storage blob list --container-name 'website' --account-name infoasststoredev2 --account-key 'uNtxwOpaDQwbYluepiLIuQnDlCD18bmstUFRcNTZ30beP+eOU/2cV8tBCSXa/5hwCiW55IU5BAUs+AStlzrryQ==' --output json
+[2026-02-04 16:38:27] [SUCCESS]   Container website: 0 blobs, 0 GB
+[2026-02-04 16:38:27] [INFO] 
+[2026-02-04 16:38:27] [SUCCESS] Complete assessment saved: .\assessments\dev2-source\20260204-163118\storage-assessment.json
+[2026-02-04 16:38:27] [INFO] 
+[2026-02-04 16:38:27] [INFO] Generating summary report...
+[2026-02-04 16:38:28] [SUCCESS] Summary report saved: .\assessments\dev2-source\20260204-163118\STORAGE-ASSESSMENT-SUMMARY.md
+[2026-02-04 16:38:28] [INFO] 
+[2026-02-04 16:38:28] [INFO] ========================================
+[2026-02-04 16:38:28] [SUCCESS] ASSESSMENT COMPLETE
+[2026-02-04 16:38:28] [INFO] ========================================
+[2026-02-04 16:38:28] [INFO] 
+[2026-02-04 16:38:28] [INFO] [DATA] infoasststoredev2: 109 containers, 18944 blobs, 2.260 GB
+[2026-02-04 16:38:28] [INFO] 
+[2026-02-04 16:38:28] [INFO] Output Directory: .\assessments\dev2-source\20260204-163118
+[2026-02-04 16:38:28] [INFO] Summary Report: .\assessments\dev2-source\20260204-163118\STORAGE-ASSESSMENT-SUMMARY.md
+[2026-02-04 16:38:28] [INFO] 
+[2026-02-04 16:38:28] [INFO] [NEXT] Review the summary report and complete the copy plan
+[2026-02-04 16:38:28] [INFO] ========================================

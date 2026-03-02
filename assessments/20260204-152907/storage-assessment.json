@@ -1,0 +1,401 @@
+{
+  "timestamp": "2026-02-04 15:30:43",
+  "subscription": "d2d4e571-e0f2-4f6c-901a-f88f7669bcba",
+  "resourceGroup": "EsDAICoE-Sandbox",
+  "storageAccountCount": 6,
+  "totalSizeGB": 0.008,
+  "totalBlobCount": 7.0,
+  "storageAccounts": [
+    {
+      "name": "esdaicoesandboxst",
+      "location": "canadaeast",
+      "sku": "Standard_LRS",
+      "kind": "StorageV2",
+      "createdTime": "2025-04-17T15:10:50.873871-04:00",
+      "primaryEndpoints": {
+        "blob": "https://esdaicoesandboxst.blob.core.windows.net/",
+        "dfs": "https://esdaicoesandboxst.dfs.core.windows.net/",
+        "file": "https://esdaicoesandboxst.file.core.windows.net/",
+        "internetEndpoints": null,
+        "ipv6Endpoints": null,
+        "microsoftEndpoints": null,
+        "queue": "https://esdaicoesandboxst.queue.core.windows.net/",
+        "table": "https://esdaicoesandboxst.table.core.windows.net/",
+        "web": "https://esdaicoesandboxst.z27.web.core.windows.net/"
+      },
+      "containers": [],
+      "totalSizeGB": 0,
+      "totalBlobCount": 0,
+      "accessTier": "Hot",
+      "allowBlobPublicAccess": false,
+      "networkRuleSet": {
+        "defaultAction": "Deny",
+        "bypass": "AzureServices",
+        "ipRules": 1,
+        "virtualNetworkRules": 0
+      },
+      "supportsHttpsTrafficOnly": true,
+      "minimumTlsVersion": "TLS1_2",
+      "hasPermissions": true,
+      "errors": [
+        "Storage account assessment failed: Command failed with exit code 1"
+      ]
+    },
+    {
+      "name": "eqvispocaistorage",
+      "location": "canadacentral",
+      "sku": "Standard_LRS",
+      "kind": "StorageV2",
+      "createdTime": "2025-04-29T14:55:09.977339-04:00",
+      "primaryEndpoints": {
+        "blob": "https://eqvispocaistorage.blob.core.windows.net/",
+        "dfs": "https://eqvispocaistorage.dfs.core.windows.net/",
+        "file": "https://eqvispocaistorage.file.core.windows.net/",
+        "internetEndpoints": null,
+        "ipv6Endpoints": null,
+        "microsoftEndpoints": null,
+        "queue": "https://eqvispocaistorage.queue.core.windows.net/",
+        "table": "https://eqvispocaistorage.table.core.windows.net/",
+        "web": "https://eqvispocaistorage.z9.web.core.windows.net/"
+      },
+      "containers": [
+        {
+          "name": "0f471f3c-32de-4d74-8684-79f3a9a2469f-azureml",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T10:49:01-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "0f471f3c-32de-4d74-8684-79f3a9a2469f-azureml-blobstore",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T10:49:01-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        }
+      ],
+      "totalSizeGB": 0.0,
+      "totalBlobCount": 0,
+      "accessTier": "Hot",
+      "allowBlobPublicAccess": false,
+      "networkRuleSet": {
+        "defaultAction": "Deny",
+        "bypass": "AzureServices",
+        "ipRules": 1,
+        "virtualNetworkRules": 0
+      },
+      "supportsHttpsTrafficOnly": true,
+      "minimumTlsVersion": "TLS1_2",
+      "hasPermissions": true,
+      "errors": []
+    },
+    {
+      "name": "eqvispocdata",
+      "location": "canadacentral",
+      "sku": "Standard_LRS",
+      "kind": "StorageV2",
+      "createdTime": "2025-04-29T11:38:18.65964-04:00",
+      "primaryEndpoints": {
+        "blob": "https://eqvispocdata.blob.core.windows.net/",
+        "dfs": "https://eqvispocdata.dfs.core.windows.net/",
+        "file": "https://eqvispocdata.file.core.windows.net/",
+        "internetEndpoints": null,
+        "ipv6Endpoints": null,
+        "microsoftEndpoints": null,
+        "queue": "https://eqvispocdata.queue.core.windows.net/",
+        "table": "https://eqvispocdata.table.core.windows.net/",
+        "web": "https://eqvispocdata.z9.web.core.windows.net/"
+      },
+      "containers": [
+        {
+          "name": "fileupload-navigation",
+          "blobCount": 1,
+          "sizeBytes": 4062.0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-05-01T15:37:16-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": "navigation.txt",
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 1
+          }
+        },
+        {
+          "name": "fileupload-viz1",
+          "blobCount": 2,
+          "sizeBytes": 5996458.0,
+          "sizeGB": 0.006,
+          "publicAccess": "None",
+          "lastModified": "2025-10-21T14:57:56-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": [
+            "really_short.txt",
+            "short.txt"
+          ],
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 2
+          }
+        },
+        {
+          "name": "fileupload-viz3",
+          "blobCount": 1,
+          "sizeBytes": 850298.0,
+          "sizeGB": 0.001,
+          "publicAccess": "None",
+          "lastModified": "2025-10-21T15:17:36-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": "really_short.txt",
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 1
+          }
+        },
+        {
+          "name": "fileupload-vizshort",
+          "blobCount": 1,
+          "sizeBytes": 1414596.0,
+          "sizeGB": 0.001,
+          "publicAccess": "None",
+          "lastModified": "2025-10-21T15:13:20-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": "really_short.txt",
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 1
+          }
+        }
+      ],
+      "totalSizeGB": 0.008,
+      "totalBlobCount": 5,
+      "accessTier": "Hot",
+      "allowBlobPublicAccess": false,
+      "networkRuleSet": {
+        "defaultAction": "Deny",
+        "bypass": "AzureServices",
+        "ipRules": 1,
+        "virtualNetworkRules": 0
+      },
+      "supportsHttpsTrafficOnly": true,
+      "minimumTlsVersion": "TLS1_2",
+      "hasPermissions": true,
+      "errors": []
+    },
+    {
+      "name": "eqvispocfuncstorage",
+      "location": "canadacentral",
+      "sku": "Standard_LRS",
+      "kind": "StorageV2",
+      "createdTime": "2025-04-29T10:55:45.038509-04:00",
+      "primaryEndpoints": {
+        "blob": "https://eqvispocfuncstorage.blob.core.windows.net/",
+        "dfs": "https://eqvispocfuncstorage.dfs.core.windows.net/",
+        "file": "https://eqvispocfuncstorage.file.core.windows.net/",
+        "internetEndpoints": null,
+        "ipv6Endpoints": null,
+        "microsoftEndpoints": null,
+        "queue": "https://eqvispocfuncstorage.queue.core.windows.net/",
+        "table": "https://eqvispocfuncstorage.table.core.windows.net/",
+        "web": "https://eqvispocfuncstorage.z9.web.core.windows.net/"
+      },
+      "containers": [
+        {
+          "name": "azure-webjobs-hosts",
+          "blobCount": 1,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-04-29T11:25:31-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": "locks/eqvis-poc-func/host",
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 1
+          }
+        },
+        {
+          "name": "azure-webjobs-secrets",
+          "blobCount": 1,
+          "sizeBytes": 826.0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2025-04-29T11:25:56-04:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": "eqvis-poc-func/host.json",
+          "blobTypes": {
+            "Type": "BlockBlob",
+            "Count": 1
+          }
+        }
+      ],
+      "totalSizeGB": 0.0,
+      "totalBlobCount": 2,
+      "accessTier": "Hot",
+      "allowBlobPublicAccess": false,
+      "networkRuleSet": {
+        "defaultAction": "Deny",
+        "bypass": "AzureServices",
+        "ipRules": 1,
+        "virtualNetworkRules": 0
+      },
+      "supportsHttpsTrafficOnly": true,
+      "minimumTlsVersion": "TLS1_2",
+      "hasPermissions": true,
+      "errors": []
+    },
+    {
+      "name": "marcosand20260203",
+      "location": "canadacentral",
+      "sku": "Standard_LRS",
+      "kind": "StorageV2",
+      "createdTime": "2026-02-03T12:18:53.407915-05:00",
+      "primaryEndpoints": {
+        "blob": "https://marcosand20260203.blob.core.windows.net/",
+        "dfs": "https://marcosand20260203.dfs.core.windows.net/",
+        "file": "https://marcosand20260203.file.core.windows.net/",
+        "internetEndpoints": null,
+        "ipv6Endpoints": null,
+        "microsoftEndpoints": null,
+        "queue": "https://marcosand20260203.queue.core.windows.net/",
+        "table": "https://marcosand20260203.table.core.windows.net/",
+        "web": "https://marcosand20260203.z9.web.core.windows.net/"
+      },
+      "containers": [
+        {
+          "name": "config",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T11:31:38-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "content",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T11:31:35-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "function",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T11:31:44-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "logs",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T11:31:41-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "upload",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T11:31:32-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        },
+        {
+          "name": "website",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-04T11:31:47-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        }
+      ],
+      "totalSizeGB": 0.0,
+      "totalBlobCount": 0,
+      "accessTier": "Hot",
+      "allowBlobPublicAccess": false,
+      "networkRuleSet": {
+        "defaultAction": "Deny",
+        "bypass": "AzureServices",
+        "ipRules": 1,
+        "virtualNetworkRules": 0
+      },
+      "supportsHttpsTrafficOnly": true,
+      "minimumTlsVersion": "TLS1_2",
+      "hasPermissions": true,
+      "errors": []
+    },
+    {
+      "name": "marcosandboxfinopshub",
+      "location": "canadacentral",
+      "sku": "Standard_LRS",
+      "kind": "StorageV2",
+      "createdTime": "2026-02-03T17:33:30.45411-05:00",
+      "primaryEndpoints": {
+        "blob": "https://marcosandboxfinopshub.blob.core.windows.net/",
+        "dfs": "https://marcosandboxfinopshub.dfs.core.windows.net/",
+        "file": "https://marcosandboxfinopshub.file.core.windows.net/",
+        "internetEndpoints": null,
+        "ipv6Endpoints": null,
+        "microsoftEndpoints": null,
+        "queue": "https://marcosandboxfinopshub.queue.core.windows.net/",
+        "table": "https://marcosandboxfinopshub.table.core.windows.net/",
+        "web": "https://marcosandboxfinopshub.z9.web.core.windows.net/"
+      },
+      "containers": [
+        {
+          "name": "costs",
+          "blobCount": 0,
+          "sizeBytes": 0,
+          "sizeGB": 0.0,
+          "publicAccess": "None",
+          "lastModified": "2026-02-03T17:49:31-05:00",
+          "leaseStatus": "unlocked",
+          "sampleBlobs": null,
+          "blobTypes": null
+        }
+      ],
+      "totalSizeGB": 0.0,
+      "totalBlobCount": 0,
+      "accessTier": "Hot",
+      "allowBlobPublicAccess": false,
+      "networkRuleSet": {
+        "defaultAction": "Deny",
+        "bypass": "AzureServices",
+        "ipRules": 1,
+        "virtualNetworkRules": 0
+      },
+      "supportsHttpsTrafficOnly": true,
+      "minimumTlsVersion": "TLS1_2",
+      "hasPermissions": true,
+      "errors": []
+    }
+  ]
+}

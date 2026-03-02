@@ -1,0 +1,196 @@
+{
+  "accessTier": "Hot",
+  "accountMigrationInProgress": null,
+  "allowBlobPublicAccess": false,
+  "allowCrossTenantReplication": true,
+  "allowSharedKeyAccess": true,
+  "allowedCopyScope": null,
+  "azureFilesIdentityBasedAuthentication": null,
+  "blobRestoreStatus": null,
+  "creationTime": "2025-09-12T15:56:26.419281-04:00",
+  "customDomain": null,
+  "defaultToOAuthAuthentication": false,
+  "dnsEndpointType": "Standard",
+  "dualStackEndpointPreference": null,
+  "enableExtendedGroups": null,
+  "enableHttpsTrafficOnly": true,
+  "enableNfsV3": false,
+  "encryption": {
+    "encryptionIdentity": null,
+    "keySource": "Microsoft.Storage",
+    "keyVaultProperties": null,
+    "requireInfrastructureEncryption": null,
+    "services": {
+      "blob": {
+        "enabled": true,
+        "keyType": "Account",
+        "lastEnabledTime": "2025-09-12T15:56:26.544297-04:00"
+      },
+      "file": {
+        "enabled": true,
+        "keyType": "Account",
+        "lastEnabledTime": "2025-09-12T15:56:26.544297-04:00"
+      },
+      "queue": null,
+      "table": null
+    }
+  },
+  "extendedLocation": null,
+  "failoverInProgress": null,
+  "geoPriorityReplicationStatus": null,
+  "geoReplicationStats": null,
+  "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Storage/storageAccounts/infoasststoredev2",
+  "identity": {
+    "principalId": null,
+    "tenantId": null,
+    "type": "None",
+    "userAssignedIdentities": null
+  },
+  "immutableStorageWithVersioning": null,
+  "isHnsEnabled": false,
+  "isLocalUserEnabled": true,
+  "isSftpEnabled": false,
+  "isSkuConversionBlocked": null,
+  "keyCreationTime": {
+    "key1": "2025-09-12T15:56:26.544297-04:00",
+    "key2": "2025-09-12T15:56:26.544297-04:00"
+  },
+  "keyPolicy": null,
+  "kind": "StorageV2",
+  "largeFileSharesState": null,
+  "lastGeoFailoverTime": null,
+  "location": "canadacentral",
+  "minimumTlsVersion": "TLS1_2",
+  "name": "infoasststoredev2",
+  "networkRuleSet": {
+    "bypass": "AzureServices",
+    "defaultAction": "Deny",
+    "ipRules": [],
+    "ipv6Rules": [],
+    "resourceAccessRules": [
+      {
+        "resourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/providers/Microsoft.Security/datascanners/storageDataScanner",
+        "tenantId": "9ed55846-8a81-4246-acd8-b1a01abfc0d1"
+      }
+    ],
+    "virtualNetworkRules": [
+      {
+        "action": "Allow",
+        "state": "Succeeded",
+        "virtualNetworkResourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Network/virtualNetworks/infoasst-vnet-dev2/subnets/function"
+      },
+      {
+        "action": "Allow",
+        "state": "Succeeded",
+        "virtualNetworkResourceId": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Network/virtualNetworks/infoasst-vnet-dev2/subnets/integration"
+      }
+    ]
+  },
+  "placement": null,
+  "primaryEndpoints": {
+    "blob": "https://infoasststoredev2.blob.core.windows.net/",
+    "dfs": "https://infoasststoredev2.dfs.core.windows.net/",
+    "file": "https://infoasststoredev2.file.core.windows.net/",
+    "internetEndpoints": null,
+    "ipv6Endpoints": null,
+    "microsoftEndpoints": null,
+    "queue": "https://infoasststoredev2.queue.core.windows.net/",
+    "table": "https://infoasststoredev2.table.core.windows.net/",
+    "web": "https://infoasststoredev2.z9.web.core.windows.net/"
+  },
+  "primaryLocation": "canadacentral",
+  "privateEndpointConnections": [
+    {
+      "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Storage/storageAccounts/infoasststoredev2/privateEndpointConnections/infoasststoredev2.ebb1ad4f-079e-47d2-acaa-45e1af2cb9b6",
+      "name": "infoasststoredev2.ebb1ad4f-079e-47d2-acaa-45e1af2cb9b6",
+      "privateEndpoint": {
+        "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Network/privateEndpoints/infoasststoredev2-private-endpoint-table",
+        "resourceGroup": "infoasst-dev2"
+      },
+      "privateLinkServiceConnectionState": {
+        "actionRequired": "None",
+        "description": "Auto-Approved",
+        "status": "Approved"
+      },
+      "provisioningState": "Succeeded",
+      "resourceGroup": "infoasst-dev2",
+      "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections"
+    },
+    {
+      "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Storage/storageAccounts/infoasststoredev2/privateEndpointConnections/infoasststoredev2.14f07d96-6b21-4f92-b5d2-eb17ad34e5e4",
+      "name": "infoasststoredev2.14f07d96-6b21-4f92-b5d2-eb17ad34e5e4",
+      "privateEndpoint": {
+        "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Network/privateEndpoints/infoasststoredev2-private-endpoint-blob",
+        "resourceGroup": "infoasst-dev2"
+      },
+      "privateLinkServiceConnectionState": {
+        "actionRequired": "None",
+        "description": "Auto-Approved",
+        "status": "Approved"
+      },
+      "provisioningState": "Succeeded",
+      "resourceGroup": "infoasst-dev2",
+      "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections"
+    },
+    {
+      "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Storage/storageAccounts/infoasststoredev2/privateEndpointConnections/infoasststoredev2.c4a24bb6-fc96-46b0-8771-040de41de136",
+      "name": "infoasststoredev2.c4a24bb6-fc96-46b0-8771-040de41de136",
+      "privateEndpoint": {
+        "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Network/privateEndpoints/infoasststoredev2-private-endpoint-queue",
+        "resourceGroup": "infoasst-dev2"
+      },
+      "privateLinkServiceConnectionState": {
+        "actionRequired": "None",
+        "description": "Auto-Approved",
+        "status": "Approved"
+      },
+      "provisioningState": "Succeeded",
+      "resourceGroup": "infoasst-dev2",
+      "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections"
+    },
+    {
+      "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Storage/storageAccounts/infoasststoredev2/privateEndpointConnections/infoasststoredev2.5d2455da-12d6-46bc-a94f-5cddc3db83b5",
+      "name": "infoasststoredev2.5d2455da-12d6-46bc-a94f-5cddc3db83b5",
+      "privateEndpoint": {
+        "id": "/subscriptions/d2d4e571-e0f2-4f6c-901a-f88f7669bcba/resourceGroups/infoasst-dev2/providers/Microsoft.Network/privateEndpoints/infoasststoredev2-private-endpoint-file",
+        "resourceGroup": "infoasst-dev2"
+      },
+      "privateLinkServiceConnectionState": {
+        "actionRequired": "None",
+        "description": "Auto-Approved",
+        "status": "Approved"
+      },
+      "provisioningState": "Succeeded",
+      "resourceGroup": "infoasst-dev2",
+      "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections"
+    }
+  ],
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Disabled",
+  "resourceGroup": "infoasst-dev2",
+  "routingPreference": null,
+  "sasPolicy": null,
+  "secondaryEndpoints": null,
+  "secondaryLocation": null,
+  "sku": {
+    "name": "Standard_LRS",
+    "tier": "Standard"
+  },
+  "statusOfPrimary": "available",
+  "statusOfSecondary": null,
+  "storageAccountSkuConversionStatus": null,
+  "tags": {
+    "BuildNumber": "local",
+    "Fin_FinancialAuthority": "todd.whitley@hrsdc-rhdcc.gc.ca",
+    "FinancialAuthority": "Whitley, Todd",
+    "ProjectName": "EVA Foundation",
+    "ai_client": "AICOE",
+    "ai_costcenter": "NiashaB-233020",
+    "ai_manager": "Niasha Blake",
+    "ai_subclient": "jurispridence",
+    "shared_cost": "TRUE",
+    "ssc_cbrid": "2133"
+  },
+  "type": "Microsoft.Storage/storageAccounts",
+  "zones": null
+}

@@ -1,0 +1,45 @@
+# Vacation Calendar for Sandbox Auto-Start/Stop
+# Format: YYYY-MM-DD | Type | Description
+# Type: VACATION, HOLIDAY, MAINTENANCE, SKIP
+# 
+# Lines starting with # are comments
+# Empty lines are ignored
+# The Schedule-Sandbox script will skip auto-start/stop on these dates
+
+# === 2026 Holidays (Canada) ===
+2026-01-01 | HOLIDAY | New Year's Day
+2026-04-03 | HOLIDAY | Good Friday
+2026-04-06 | HOLIDAY | Easter Monday
+2026-05-18 | HOLIDAY | Victoria Day
+2026-07-01 | HOLIDAY | Canada Day
+2026-08-03 | HOLIDAY | Civic Holiday
+2026-09-07 | HOLIDAY | Labour Day
+2026-10-12 | HOLIDAY | Thanksgiving
+2026-11-11 | HOLIDAY | Remembrance Day
+2026-12-25 | HOLIDAY | Christmas Day
+2026-12-26 | HOLIDAY | Boxing Day
+
+# === Personal Vacation / Days Off ===
+# Add your vacation dates below
+# Example: 2026-03-15 | VACATION | Spring break
+2026-02-12 | VACATION | Travelling outside Canada
+2026-02-13 | VACATION | Travelling outside Canada
+2026-02-16 | VACATION | Travelling outside Canada
+2026-02-17 | VACATION | Travelling outside Canada
+2026-02-18 | VACATION | Travelling outside Canada
+2026-02-19 | VACATION | Travelling outside Canada
+2026-02-20 | VACATION | Travelling outside Canada
+2026-02-23 | VACATION | Travelling outside Canada
+2026-02-24 | VACATION | Travelling outside Canada
+2026-02-25 | VACATION | Travelling outside Canada
+2026-02-26 | VACATION | Travelling outside Canada
+2026-02-27 | VACATION | Travelling outside Canada
+
+
+# === Maintenance Windows ===
+# Add planned maintenance dates when auto-start/stop should be skipped
+# Example: 2026-06-15 | MAINTENANCE | Azure maintenance window
+
+# === Custom Skip Dates ===
+# Any other dates when auto-start/stop should not run
+# Example: 2026-08-20 | SKIP | Special project day

@@ -1,0 +1,235 @@
+{
+  "collection_date": "2026-02-03T08:02:21",
+  "subscription": "EsDAICoESub",
+  "subscription_id": "d2d4e571-e0f2-4f6c-901a-f88f7669bcba",
+  "resource_groups": [
+    "infoasst-dev2",
+    "EVAChatDev2Rg"
+  ],
+  "total_resources": 81,
+  "resource_breakdown": {
+    "ai_ml_services": {
+      "count": 5,
+      "resources": [
+        {
+          "name": "infoasst-aoai-dev2",
+          "type": "Microsoft.CognitiveServices/accounts",
+          "kind": "OpenAI",
+          "sku": "S0",
+          "location": "canadaeast",
+          "deployments": [
+            "gpt-4o",
+            "dev2-text-embedding"
+          ],
+          "estimated_cost_monthly": "$200-300",
+          "reusable": true,
+          "reusability_score": 95
+        },
+        {
+          "name": "infoasst-aisvc-dev2",
+          "type": "Microsoft.CognitiveServices/accounts",
+          "kind": "AIServices",
+          "sku": "S0",
+          "location": "canadacentral",
+          "estimated_cost_monthly": "$50-100",
+          "reusable": false,
+          "reusability_score": 40
+        },
+        {
+          "name": "infoasst-docint-dev2",
+          "type": "Microsoft.CognitiveServices/accounts",
+          "kind": "FormRecognizer",
+          "sku": "S0",
+          "location": "canadacentral",
+          "estimated_cost_monthly": "$30-50",
+          "reusable": true,
+          "reusability_score": 80
+        },
+        {
+          "name": "infoasst-search-dev2",
+          "type": "Microsoft.Search/searchServices",
+          "sku": "standard",
+          "location": "canadacentral",
+          "estimated_cost_monthly": "$250",
+          "reusable": false,
+          "reusability_score": 30,
+          "note": "Sandbox will use Basic tier ($75) instead"
+        },
+        {
+          "name": "infoasst-cosmos-dev2",
+          "type": "Microsoft.DocumentDB/databaseAccounts",
+          "kind": "GlobalDocumentDB",
+          "location": "canadacentral",
+          "estimated_cost_monthly": "$25-50",
+          "reusable": false,
+          "reusability_score": 20,
+          "note": "Sandbox will use serverless mode ($5-10)"
+        }
+      ]
+    },
+    "storage": {
+      "count": 1,
+      "resources": [
+        {
+          "name": "infoasststoredev2",
+          "type": "Microsoft.Storage/storageAccounts",
+          "sku": "Standard_LRS",
+          "location": "canadacentral",
+          "private_endpoints": 4,
+          "estimated_cost_monthly": "$20-30",
+          "reusable": false,
+          "reusability_score": 10
+        }
+      ]
+    },
+    "compute": {
+      "count": 6,
+      "resources": [
+        {
+          "name": "infoasst-web-dev2",
+          "type": "Microsoft.Web/sites",
+          "kind": "app,linux,container",
+          "app_service_plan": "infoasst-asp-dev2",
+          "estimated_cost_monthly": "Included in ASP"
+        },
+        {
+          "name": "infoasst-enrichmentweb-dev2",
+          "type": "Microsoft.Web/sites",
+          "kind": "app,linux,container",
+          "app_service_plan": "infoasst-enrichmentasp-dev2",
+          "estimated_cost_monthly": "Included in ASP"
+        },
+        {
+          "name": "infoasst-func-dev2",
+          "type": "Microsoft.Web/sites",
+          "kind": "functionapp,linux,container",
+          "app_service_plan": "infoasst-func-asp-dev2",
+          "estimated_cost_monthly": "Included in ASP"
+        },
+        {
+          "name": "infoasst-asp-dev2",
+          "type": "Microsoft.Web/serverfarms",
+          "sku": "P1V2",
+          "estimated_cost_monthly": "$73",
+          "note": "Sandbox will use B1 ($13)"
+        },
+        {
+          "name": "infoasst-enrichmentasp-dev2",
+          "type": "Microsoft.Web/serverfarms",
+          "sku": "P1V2",
+          "estimated_cost_monthly": "$73",
+          "note": "Sandbox will use B1 ($13)"
+        },
+        {
+          "name": "infoasst-func-asp-dev2",
+          "type": "Microsoft.Web/serverfarms",
+          "sku": "EP1",
+          "estimated_cost_monthly": "$70-100",
+          "note": "Sandbox will use Consumption ($1-5)"
+        }
+      ]
+    },
+    "networking_security": {
+      "count": 22,
+      "resources": [
+        {
+          "type": "Microsoft.Network/virtualNetworks",
+          "count": 1,
+          "name": "infoasst-vnet-dev2",
+          "estimated_cost_monthly": "$5-10"
+        },
+        {
+          "type": "Microsoft.Network/privateEndpoints",
+          "count": 15,
+          "estimated_cost_monthly": "$15-75 total",
+          "note": "Sandbox will use public endpoints with firewall"
+        },
+        {
+          "type": "Microsoft.ContainerRegistry/registries",
+          "count": 1,
+          "name": "infoasstacrdev2",
+          "sku": "Standard",
+          "estimated_cost_monthly": "$20"
+        },
+        {
+          "type": "Microsoft.KeyVault/vaults",
+          "count": 2,
+          "names": ["infoasst-kv-dev2", "evachatdev2kv"],
+          "estimated_cost_monthly": "$0.06 total"
+        },
+        {
+          "type": "Microsoft.Network/networkSecurityGroups",
+          "count": 1,
+          "estimated_cost_monthly": "$0"
+        },
+        {
+          "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
+          "count": 18,
+          "estimated_cost_monthly": "$9 total"
+        }
+      ]
+    },
+    "monitoring": {
+      "count": 4,
+      "resources": [
+        {
+          "type": "Microsoft.Insights/components",
+          "count": 1,
+          "name": "infoasst-appinsights-dev2",
+          "estimated_cost_monthly": "$0-10"
+        },
+        {
+          "type": "Microsoft.OperationalInsights/workspaces",
+          "count": 1,
+          "name": "infoasst-loganalytics-dev2",
+          "estimated_cost_monthly": "$0-20"
+        },
+        {
+          "type": "Microsoft.Insights/autoscalesettings",
+          "count": 1,
+          "estimated_cost_monthly": "$0"
+        },
+        {
+          "type": "Microsoft.Insights/workbooks",
+          "count": 1,
+          "estimated_cost_monthly": "$0"
+        }
+      ]
+    }
+  },
+  "cost_analysis": {
+    "dev2_total_monthly": "$500-700",
+    "sandbox_target_monthly": "$100-150",
+    "cost_reduction_percentage": 79,
+    "cost_savings_monthly": "$400-550"
+  },
+  "reusability_recommendations": {
+    "high_priority_reuse": [
+      "infoasst-aoai-dev2 (saves $200-300/month)",
+      "infoasst-docint-dev2 (saves $30-50/month)"
+    ],
+    "medium_priority_reuse": [
+      "infoasst-loganalytics-dev2 (shared monitoring)",
+      "infoasst-appinsights-dev2 (shared telemetry)"
+    ],
+    "not_recommended_reuse": [
+      "infoasst-cosmos-dev2 (use serverless instead)",
+      "infoasst-search-dev2 (use Basic tier instead)",
+      "App Service Plans (use B1 tier instead)",
+      "Storage account (need separate namespace)",
+      "VNet infrastructure (use public endpoints)"
+    ]
+  },
+  "deployment_notes": {
+    "architecture_pattern": "Lean Sandbox (Option 2)",
+    "estimated_deployment_time": "2-3 hours",
+    "terraform_apply_complexity": "medium",
+    "rollback_plan": "terraform destroy + state backup"
+  },
+  "validation_reference": {
+    "script": "Get-AzureInventory-Enhanced.ps1 v3.0.0",
+    "validation_report": "VALIDATION-COMPLETE-20260203.md",
+    "blueprint": "SANDBOX-BLUEPRINT-rg-sandbox-marco.md",
+    "evidence_location": "I:\\eva-foundation\\system-analysis\\inventory\\.eva-cache\\"
+  }
+}
