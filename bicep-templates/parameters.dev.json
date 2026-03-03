@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "canadacentral"
+    },
+    "secondaryLocation": {
+      "value": "canadaeast"
+    },
+    "environment": {
+      "value": "dev"
+    },
+    "resourcePrefix": {
+      "value": "msub"
+    },
+    "ownerEmail": {
+      "value": "marco.presta@hrsdc-rhdcc.gc.ca"
+    },
+    "projectName": {
+      "value": "eva-sandbox"
+    },
+    "evaBrainApiImageTag": {
+      "value": "sprint7-epic-scope"
+    },
+    "evaDataModelImageTag": {
+      "value": "20260302-1300"
+    },
+    "evaFacesImageTag": {
+      "value": "20260226-v16"
+    },
+    "evaRolesApiImageTag": {
+      "value": "latest"
+    },
+    "apimSku": {
+      "value": "Consumption"
+    },
+    "searchSku": {
+      "value": "free"
+    },
+    "backendPlanSku": {
+      "value": "B1"
+    },
+    "containerAppCpu": {
+      "value": "0.25"
+    },
+    "containerAppMemory": {
+      "value": "0.5Gi"
+    }
+  }
+}
