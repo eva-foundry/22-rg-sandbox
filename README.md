@@ -1,17 +1,38 @@
 # Project 22: EsDAICoE-Sandbox Deployment
 
-**Project Status**: ⚠️ PHASE 3 IN PROGRESS (50%) - [Status](./DEPLOYMENT-STATUS-CURRENT.md) | [Inventory](./RESOURCE-INVENTORY-20260204.md) | [Cost Analysis](./COST-ANALYSIS-20260204.md) | [Audit](./PROJECT-22-COMPREHENSIVE-AUDIT.md)  
+<!-- eva-primed -->
+<!-- foundation-primer: 2026-03-03 by agent:copilot -->
+
+## EVA Ecosystem Integration
+
+| Tool | Purpose | How to Use |
+|------|---------|------------|
+| 37-data-model | Single source of truth for all project entities | GET http://localhost:8010/model/projects/22-rg-sandbox |
+| 29-foundry | Agentic capabilities (search, RAG, eval, observability) | C:\eva-foundry\eva-foundation\29-foundry |
+| 48-eva-veritas | Trust score and coverage audit | MCP tool: audit_repo / get_trust_score |
+| 07-foundation-layer | Copilot instructions primer + governance templates | MCP tool: apply_primer / audit_project |
+
+**Agent rule**: Query the data model API before reading source files.
+```powershell
+Invoke-RestMethod "http://localhost:8010/model/agent-guide"   # complete protocol
+Invoke-RestMethod "http://localhost:8010/model/agent-summary" # all layer counts
+```
+
+---
+
+
+**Project Status**: ?? PHASE 3 IN PROGRESS (50%) - [Status](./DEPLOYMENT-STATUS-CURRENT.md) | [Inventory](./RESOURCE-INVENTORY-20260204.md) | [Cost Analysis](./COST-ANALYSIS-20260204.md) | [Audit](./PROJECT-22-COMPREHENSIVE-AUDIT.md)  
 **Owner**: Marco Presta (marco.presta@hrsdc-rhdcc.gc.ca)  
 **Subscription**: EsDAICoESub (d2d4e571-e0f2-4f6c-901a-f88f7669bcba)  
 **Resource Group**: EsDAICoE-Sandbox (Owner until April 17, 2026)  
 **Location**: Canada Central  
 **Current Cost**: $182/month (18 active resources, 79% savings vs. Dev2)  
-**Deployment Progress**: Phase 1 ✅ Complete (12 resources, $124/mo) | Phase 2 ✅ Complete (1 resource, $50/mo) | Phase 3 ⚠️ Partial (2/4 components, $8/mo) | [Phase 4 Plan](./PHASE4-PLAN.md) Ready  
-**Cost Performance**: ✅ Within 6% of estimate ($172 planned, $182 actual)  
+**Deployment Progress**: Phase 1 ? Complete (12 resources, $124/mo) | Phase 2 ? Complete (1 resource, $50/mo) | Phase 3 ?? Partial (2/4 components, $8/mo) | [Phase 4 Plan](./PHASE4-PLAN.md) Ready  
+**Cost Performance**: ? Within 6% of estimate ($172 planned, $182 actual)  
 **Overall Completion**: 75% (6/8 criteria met)  
 **Last Verified**: February 4, 2026 via Azure CLI resource enumeration  
 **Housekeeping**: [Archive](./archive/) contains superseded documentation (33 files archived Feb 4)  
-**Knowledge Transfer**: ✅ [FinOps patterns documented in Project 14](./KNOWLEDGE-TRANSFER-COMPLETE.md) (9 reusable patterns)  
+**Knowledge Transfer**: ? [FinOps patterns documented in Project 14](./KNOWLEDGE-TRANSFER-COMPLETE.md) (9 reusable patterns)  
 **Critical Blocker**: IT permission for Storage Blob Data Contributor (Cost Management exports)  
 **Next Step**: Follow up on IT request (if no response in 48 hours), then Phase 3 completion (30 minutes) + Phase 4 implementation (3 weeks)
 
@@ -22,10 +43,10 @@
 Deploy a cost-optimized RAG system PoC into the existing **EsDAICoE-Sandbox** resource group, cloning the EVA Dev2 (infoasst-dev2) architecture. This sandbox enables PoC development and testing with official ESDC tenant services (Azure OpenAI, APIM) without impacting production environments.
 
 **Key Benefits**:
-- ✅ **Immediate Access**: Owner role already active (no infrastructure team wait)
-- ✅ **Full Control**: Owner permissions until April 17, 2026
-- ✅ **Existing Infrastructure**: RG already provisioned in Canada Central
-- ✅ **Cost-Optimized**: $100-150/month target maintained
+- ? **Immediate Access**: Owner role already active (no infrastructure team wait)
+- ? **Full Control**: Owner permissions until April 17, 2026
+- ? **Existing Infrastructure**: RG already provisioned in Canada Central
+- ? **Cost-Optimized**: $100-150/month target maintained
 
 ---
 
@@ -100,7 +121,7 @@ Capture while still have Reader access:
 
 ---
 
-## Reference Architecture (Dev2 → Sandbox Mapping)
+## Reference Architecture (Dev2 ? Sandbox Mapping)
 
 ### Dev2 (Source - 81 resources, validated 2026-02-03)
 ```
@@ -113,7 +134,7 @@ Core AI/ML Services (5):
 
 Storage & Data (1):
   infoasststoredev2 (Storage Standard_LRS) - Canada Central
-    └─ Private Endpoints: blob, file, queue, table (4)
+    ?? Private Endpoints: blob, file, queue, table (4)
 
 Compute Layer (6):
   infoasst-web-dev2 (Web App - Linux container)
@@ -144,7 +165,7 @@ Monitoring (4):
 marco-sandbox-search (Cognitive Search Basic)
 marco-sandbox-cosmos (Cosmos DB Serverless)
 marcosandboxstore (Storage Standard_LRS)
-  └─ PUBLIC endpoints with firewall rules
+  ?? PUBLIC endpoints with firewall rules
 marco-sandbox-backend (Web App B1)
 marco-sandbox-enrichment (Web App B1)
 marco-sandbox-function (Function App Consumption)
@@ -203,7 +224,7 @@ marco-sandbox-kv (Key Vault Standard)
 ## Success Criteria
 
 ### Functional Requirements
-- [ ] **RAG Pipeline**: Document upload → OCR → chunking → embedding → indexing working end-to-end
+- [ ] **RAG Pipeline**: Document upload ? OCR ? chunking ? embedding ? indexing working end-to-end
 - [ ] **Chat Interface**: Ask questions, receive answers with citations from indexed documents
 - [ ] **Search**: Hybrid vector+keyword search returning relevant results
 - [ ] **Authentication**: Azure AD login working for marco.presta@hrsdc-rhdcc.gc.ca
@@ -245,14 +266,14 @@ marco-sandbox-kv (Key Vault Standard)
 
 ## Deployment Timeline
 
-### Phase 1: Pre-Deployment (Feb 3-4) ✅ COMPLETE
-- ✅ Inventory collection: Enhanced script validated, 1,383 resources analyzed
-- ✅ Dev2 analysis: 81 resources documented (was 63 estimate)
-- ✅ Reusability scoring: 446 resources identified for potential reuse
-- ✅ APIM readiness: 132 API-exposed resources catalogued
-- ✅ Cost optimization: 437 FinOps opportunities identified
-- ✅ Evidence: VALIDATION-COMPLETE-20260203.md, SANDBOX-BLUEPRINT-rg-sandbox-marco.md
-- ✅ Terraform config preparation: Architecture patterns validated from dev2
+### Phase 1: Pre-Deployment (Feb 3-4) ? COMPLETE
+- ? Inventory collection: Enhanced script validated, 1,383 resources analyzed
+- ? Dev2 analysis: 81 resources documented (was 63 estimate)
+- ? Reusability scoring: 446 resources identified for potential reuse
+- ? APIM readiness: 132 API-exposed resources catalogued
+- ? Cost optimization: 437 FinOps opportunities identified
+- ? Evidence: VALIDATION-COMPLETE-20260203.md, SANDBOX-BLUEPRINT-rg-sandbox-marco.md
+- ? Terraform config preparation: Architecture patterns validated from dev2
 
 ### Phase 2: Infrastructure Team Actions (Feb 5-7)
 - rg-sandbox-marco provisioned

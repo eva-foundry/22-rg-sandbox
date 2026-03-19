@@ -105,7 +105,7 @@ graph TD
 ### Step 1: Clone or Copy Templates
 
 ```powershell
-cd C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates
+cd C:\eva-foundry\22-rg-sandbox\bicep-templates
 ```
 
 ### Step 2: Set Deployment Variables
@@ -604,7 +604,7 @@ az containerapp list --resource-group $resourceGroupName --query "[].id" -o tsv 
 - [Azure Cosmos DB Best Practices](https://learn.microsoft.com/en-us/azure/cosmos-db/best-practices)
 - [Bicep Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
 - [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
-- [18-azure-best practices](C:\AICOE\eva-foundry\18-azure-best\)
+- [18-azure-best practices](C:\eva-foundry\18-azure-best\)
 
 ## Support
 

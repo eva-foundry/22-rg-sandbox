@@ -1,0 +1,1200 @@
+{
+  "meta": {
+    "schema": "eva.export-to-model.v1",
+    "generated_at": "2026-03-08T01:25:43.126Z",
+    "project_id": "22-rg-sandbox",
+    "source_files": [
+      "STATUS.md",
+      "PLAN.md"
+    ],
+    "discovery_path": "C:\\eva-foundry\\eva-foundry\\22-rg-sandbox\\.eva\\discovery.json",
+    "reconciliation_path": "C:\\eva-foundry\\eva-foundry\\22-rg-sandbox\\.eva\\reconciliation.json",
+    "layers_selected": [
+      "wbs",
+      "evidence",
+      "decisions",
+      "risks"
+    ]
+  },
+  "wbs": [
+    {
+      "id": "WBS-22rgsandbox",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": null,
+      "label": "Project: 22-rg-sandbox",
+      "level": "epic",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 87,
+      "points_done": 0,
+      "stories_total": 29,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F01",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Purpose",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F02",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Frozen Scope (January 29, 2026)",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "stories_total": 1,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S001",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F02",
+      "label": "Architecture Decision: **Public Endpoints + Reuse Strategy**",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-02-001"
+    },
+    {
+      "id": "WBS-F03",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Architecture Summary",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "stories_total": 1,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S002",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F03",
+      "label": "Resources to Deploy (12 total)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-03-001"
+    },
+    {
+      "id": "WBS-F04",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Prerequisites (Before Deployment)",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S003",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F04",
+      "label": "1. Permissions Required",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-04-001"
+    },
+    {
+      "id": "WBS-S004",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F04",
+      "label": "2. Infrastructure Team Confirmation",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-04-002"
+    },
+    {
+      "id": "WBS-S005",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F04",
+      "label": "3. Pre-Deployment Inventory (Phase 1.1)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-04-003"
+    },
+    {
+      "id": "WBS-F05",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Reference Architecture (Dev2 ? Sandbox Mapping)",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 6,
+      "points_done": 0,
+      "stories_total": 2,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S006",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F05",
+      "label": "Dev2 (Source - 81 resources, validated 2026-02-03)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-05-001"
+    },
+    {
+      "id": "WBS-S007",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F05",
+      "label": "Sandbox (Target - 12 resources)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-05-002"
+    },
+    {
+      "id": "WBS-F06",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Key Decisions & Justifications",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 15,
+      "points_done": 0,
+      "stories_total": 5,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S008",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F06",
+      "label": "Decision 1: Public Endpoints",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-06-001"
+    },
+    {
+      "id": "WBS-S009",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F06",
+      "label": "Decision 2: Reuse Azure OpenAI",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-06-002"
+    },
+    {
+      "id": "WBS-S010",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F06",
+      "label": "Decision 3: Basic Search Tier",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-06-003"
+    },
+    {
+      "id": "WBS-S011",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F06",
+      "label": "Decision 4: Serverless Cosmos DB",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-06-004"
+    },
+    {
+      "id": "WBS-S012",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F06",
+      "label": "Decision 5: B1 Web Apps",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-06-005"
+    },
+    {
+      "id": "WBS-F07",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Success Criteria",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 12,
+      "points_done": 0,
+      "stories_total": 4,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S013",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Functional Requirements",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-07-001"
+    },
+    {
+      "id": "WBS-S014",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Performance Requirements",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-07-002"
+    },
+    {
+      "id": "WBS-S015",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Cost Requirements",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-07-003"
+    },
+    {
+      "id": "WBS-S016",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F07",
+      "label": "Operational Requirements",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-07-004"
+    },
+    {
+      "id": "WBS-F08",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Constraints",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 6,
+      "points_done": 0,
+      "stories_total": 2,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S017",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F08",
+      "label": "Hard Constraints (Cannot Change)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-08-001"
+    },
+    {
+      "id": "WBS-S018",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F08",
+      "label": "Soft Constraints (Can Negotiate)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-08-002"
+    },
+    {
+      "id": "WBS-F09",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Deployment Timeline",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 15,
+      "points_done": 0,
+      "stories_total": 5,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S019",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F09",
+      "label": "Phase 1: Pre-Deployment (Feb 3-4) ? COMPLETE",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-09-001"
+    },
+    {
+      "id": "WBS-S020",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F09",
+      "label": "Phase 2: Infrastructure Team Actions (Feb 5-7)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-09-002"
+    },
+    {
+      "id": "WBS-S021",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F09",
+      "label": "Phase 3: Deployment (Feb 10-12)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-09-003"
+    },
+    {
+      "id": "WBS-S022",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F09",
+      "label": "Phase 4: Validation (Feb 12-13)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-09-004"
+    },
+    {
+      "id": "WBS-S023",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F09",
+      "label": "Phase 5: Cost Monitoring (Feb 14+)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-09-005"
+    },
+    {
+      "id": "WBS-F10",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Next Steps",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S024",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F10",
+      "label": "Immediate Actions (Today - Feb 3)",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-10-001"
+    },
+    {
+      "id": "WBS-S025",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F10",
+      "label": "Waiting On",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-10-002"
+    },
+    {
+      "id": "WBS-S026",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F10",
+      "label": "Blockers",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-10-003"
+    },
+    {
+      "id": "WBS-F11",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Documentation",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-F12",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Project Housekeeping",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 9,
+      "points_done": 0,
+      "stories_total": 3,
+      "stories_done": 0
+    },
+    {
+      "id": "WBS-S027",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F12",
+      "label": "Archived Content",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-12-001"
+    },
+    {
+      "id": "WBS-S028",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F12",
+      "label": "Active Documentation",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-12-002"
+    },
+    {
+      "id": "WBS-S029",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-F12",
+      "label": "Housekeeping Policy",
+      "level": "user_story",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 3,
+      "points_done": 0,
+      "acceptance_criteria": null,
+      "original_story_id": "F22-12-003"
+    },
+    {
+      "id": "WBS-F13",
+      "project_id": "22-rg-sandbox",
+      "parent_wbs_id": "WBS-22rgsandbox",
+      "label": "Contact & Escalation",
+      "level": "feature",
+      "status": "planned",
+      "percent_complete": 0,
+      "points_total": 0,
+      "points_done": 0,
+      "stories_total": 0,
+      "stories_done": 0
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EVD-22rgsandbox-D3-001",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-02-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.128Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-002",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-03-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-003",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-04-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-004",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-04-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-005",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-04-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-006",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-05-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-007",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-05-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-008",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-06-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-009",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-06-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-010",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-06-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-011",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-06-004",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-012",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-06-005",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-013",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-07-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-014",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-07-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-015",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-07-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-016",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-07-004",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-017",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-08-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-018",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-08-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-019",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-09-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-020",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-09-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-021",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-09-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-022",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-09-004",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-023",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-09-005",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-024",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-10-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-025",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-10-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-026",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-10-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-027",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-12-001",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-028",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-12-002",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    },
+    {
+      "id": "EVD-22rgsandbox-D3-029",
+      "project_id": "22-rg-sandbox",
+      "phase": "D3",
+      "story_id": "F22-12-003",
+      "status": "documented",
+      "test_count": 0,
+      "test_passed": 0,
+      "coverage": null,
+      "timestamp": "2026-03-08T01:25:43.129Z",
+      "actor": "agent:veritas",
+      "source": "veritas-export",
+      "evidence_artifacts": [
+        {
+          "path": "Assess-Storage.ps1",
+          "type": "code",
+          "is_test": false
+        }
+      ],
+      "commit_refs": []
+    }
+  ],
+  "decisions": [],
+  "risks": [],
+  "summary": {
+    "wbs_count": 43,
+    "evidence_count": 29,
+    "decisions_count": 0,
+    "risks_count": 0,
+    "mti_score": null
+  }
+}

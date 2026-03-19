@@ -160,7 +160,7 @@ For migrating from the legacy EsDAICoE-Sandbox resource group:
 
 ---
 
-**Template Repository**: C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates\  
+**Template Repository**: C:\eva-foundry\22-rg-sandbox\bicep-templates\  
 **Maintainer**: Marco Presta (marco.presta@hrsdc-rhdcc.gc.ca)  
 **License**: Internal use only - Government of Canada  
 **Last Updated**: March 3, 2026

@@ -76,7 +76,7 @@ Write-Host "`n[OK] All providers registered" -ForegroundColor Green
 
 ### Step 3: Validate Template
 ```powershell
-cd C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates
+cd C:\eva-foundry\22-rg-sandbox\bicep-templates
 
 # Create resource group
 az group create `
@@ -433,6 +433,6 @@ Once all steps are complete and verified:
 
 **Ready to deploy?** Run the automated deployment script:
 ```powershell
-cd C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates
+cd C:\eva-foundry\22-rg-sandbox\bicep-templates
 .\Deploy-Infrastructure.ps1 -Environment dev -SubscriptionId "YOUR_MARCOSUB_ID"
 ```

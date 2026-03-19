@@ -282,7 +282,7 @@ See [QUICK-REFERENCE.md](QUICK-REFERENCE.md#troubleshooting-decision-tree) for:
 - **README.md**: Full deployment guide
 - **QUICK-REFERENCE.md**: Command cheat sheet
 - **CHANGELOG.md**: Version history and known issues
-- **18-azure-best**: Azure best practices library (C:\AICOE\eva-foundry\18-azure-best\)
+- **18-azure-best**: Azure best practices library (C:\eva-foundry\18-azure-best\)
 
 ---
 

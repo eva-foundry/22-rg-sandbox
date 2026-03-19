@@ -126,12 +126,12 @@ param secrets array = []  // Removed @secure() - not valid for arrays
 
 **Final deployment command:**
 ```powershell
-cd C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates
+cd C:\eva-foundry\22-rg-sandbox\bicep-templates
 
 az deployment group create `
   --resource-group "EVA-Sandbox-dev" `
-  --template-file "C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates\main.bicep" `
-  --parameters "C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates\parameters.dev.json" `
+  --template-file "C:\eva-foundry\22-rg-sandbox\bicep-templates\main.bicep" `
+  --parameters "C:\eva-foundry\22-rg-sandbox\bicep-templates\parameters.dev.json" `
   --name "msub-deploy-202603030948"
 ```
 
@@ -575,7 +575,7 @@ az resource list -g $rg --query "[].{Name:name, Type:type, State:provisioningSta
 
 ### Bicep Templates Location
 ```
-C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates\
+C:\eva-foundry\22-rg-sandbox\bicep-templates\
   ├── main.bicep                    (main orchestration)
   ├── parameters.dev.json           (minimal cost config)
   ├── parameters.prod.json          (production config)
@@ -762,7 +762,7 @@ az webapp stop -n msub-sandbox-backend -g EVA-Sandbox-dev
 - Deployment session: March 3, 2026
 - AI Agent: GitHub Copilot (Claude Sonnet 4.5)
 - User: Marco Presta
-- Workspace: C:\AICOE
+- Workspace: C:\eva-foundry
 - Result: Infrastructure successfully deployed with minimal cost configuration
 - Next action: Import container images and complete RBAC setup
 
@@ -787,6 +787,6 @@ az webapp stop -n msub-sandbox-backend -g EVA-Sandbox-dev
 **End of Deployment Plan**
 
 For questions or issues, refer to:
-- [COST-OPTIMIZATION.md](C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates\COST-OPTIMIZATION.md)
-- [SHUTDOWN-PLAN-2WEEKS.md](C:\AICOE\eva-foundry\22-rg-sandbox\SHUTDOWN-PLAN-2WEEKS.md)
-- [README.md](C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates\README.md)
+- [COST-OPTIMIZATION.md](C:\eva-foundry\22-rg-sandbox\bicep-templates\COST-OPTIMIZATION.md)
+- [SHUTDOWN-PLAN-2WEEKS.md](C:\eva-foundry\22-rg-sandbox\SHUTDOWN-PLAN-2WEEKS.md)
+- [README.md](C:\eva-foundry\22-rg-sandbox\bicep-templates\README.md)

@@ -149,7 +149,7 @@ az functionapp list --resource-group $rg `
 az apim api list `
   --resource-group $rg `
   --service-name marco-sandbox-apim `
-  --output json > "C:\AICOE\temp\apim-apis-backup-$(Get-Date -Format 'yyyyMMdd').json"
+  --output json > "C:\eva-foundry\temp\apim-apis-backup-$(Get-Date -Format 'yyyyMMdd').json"
 
 # Delete APIM (OPTIONAL - only if comfortable recreating)
 # az apim delete --name marco-sandbox-apim --resource-group $rg --yes
@@ -185,7 +185,7 @@ az search index list `
   --resource-group $rg `
   --service-name $searchName `
   --query "[].{name:name, documentCount:statistics.documentCount}" `
-  --output json > "C:\AICOE\temp\search-indexes-backup-$(Get-Date -Format 'yyyyMMdd').json"
+  --output json > "C:\eva-foundry\temp\search-indexes-backup-$(Get-Date -Format 'yyyyMMdd').json"
 
 # Delete Search service (OPTIONAL - only if comfortable rebuilding)
 # az search service delete --name $searchName --resource-group $rg --yes
@@ -418,7 +418,7 @@ az group delete --name EsDAICoE-Sandbox --yes --no-wait
 ### Recreate When Needed
 ```powershell
 # Deploy from your new marcosub templates
-cd C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates
+cd C:\eva-foundry\22-rg-sandbox\bicep-templates
 .\DEPLOY-MARCOSUB.ps1 -SubscriptionId "d2d4e571-e0f2-4f6c-901a-f88f7669bcba"
 ```
 

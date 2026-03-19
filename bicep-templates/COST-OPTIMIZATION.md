@@ -120,7 +120,7 @@
 
 ### Option A: Update Parameters File
 
-Edit [parameters.dev.json](c:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates\parameters.dev.json):
+Edit [parameters.dev.json](c:\eva-foundry\22-rg-sandbox\bicep-templates\parameters.dev.json):
 
 ```json
 {
@@ -275,7 +275,7 @@ az webapp start --name marco-sandbox-backend --resource-group $rg
 Update `parameters.dev.json` before deployment:
 
 ```powershell
-cd C:\AICOE\eva-foundry\22-rg-sandbox\bicep-templates
+cd C:\eva-foundry\22-rg-sandbox\bicep-templates
 
 # Edit parameters.dev.json - change these 3 values:
 # apimSku: "Consumption"
